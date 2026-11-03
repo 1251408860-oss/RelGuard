@@ -154,13 +154,13 @@
     },
     {
       "path": "README.md",
-      "sha256": "d9d051b90ad2b3698ae384670e2f404de2ac5e89cece3243d20482877f7ad2f1",
-      "bytes": 4440
+      "sha256": "23d529f8acc4fca75db881735ffce2babf983dd36adbfd238a2f21430e2004e3",
+      "bytes": 7587
     },
     {
       "path": "README.zh-CN.md",
-      "sha256": "78edd576678449873a31d5bb4f1e9697038eb11af47b9acd88cf7389adea4639",
-      "bytes": 3757
+      "sha256": "13b8b7a325d72263f13147284737aeb6c5a5e3d9e0eb31eb9df73f410c3370e1",
+      "bytes": 6530
     },
     {
       "path": "reproduce.py",

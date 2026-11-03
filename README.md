@@ -1,82 +1,112 @@
-# RelGuard
+# RelGuard: Source-Checked Relational Guards from Automatic State Contracts
 
-RelGuard constructs source-checked state models and observation-specific relational guards. Candidate models are inferred from native observations, checked against source obligations, and used to generate executable guards. Affine guards include independently replayable elimination certificates.
+RelGuard is the core research implementation accompanying **Source-Checked Relational Guards from Automatic State Contracts**. It learns state contracts from native executions, checks their connection to C source, and constructs executable relational guards for observation-specific reuse of verification evidence.
 
-[中文说明](README.zh-CN.md) · [Code guide](docs/implementation.md) · [Data](docs/data.md) · [Source checking](docs/source_checks.md)
+The repository is organized around model construction, independent checking, and experimental reproduction. The navigation table maps these parts of the paper to their implementation and reference data.
 
-## Run
+[中文说明](./README.zh-CN.md)
 
-Use Python 3.12 or later. From the repository root:
+## Repository Navigation & Artifact Mapping
 
-```sh
+| Paper Component / Experiment Scope | Description | Directory Link |
+| :--- | :--- | :--- |
+| Contract models and inference | Writer bit projections, affine state models, bounded integer expressions, ordered comparisons, and active distinguishing queries | [Models](./scguard/models) · [Inference](./scguard/inference) |
+| Independent validation | Model and emission checking, elimination-certificate replay, and receipt-bound source-field admission | [Checks](./scguard/checks) |
+| Source obligations and guard generation | CRC composition, arithmetic normalization, typed source bridges, paired writer guards, and prefix emission | [Source obligations](./scguard/source) · [Code generation](./scguard/codegen) · [Public API](./scguard/core.py) |
+| Writer experiment | Twelve source contracts and eight version transitions, with native references and matched guard-policy results | [Writer data](./scguard/data/writer) |
+| Cross-family experiment | Twelve API/version tasks across CRC-32, Adler-32, memory move, and comparison sign, with training observations and relational certificates | [Cross-family data](./scguard/data/cross_family) |
+| Paper figures and tables | Two architecture figures, two experiment figures, and two tables, with editable PDF/SVG/TeX outputs | [Figure implementation](./scguard/plotting) · [Rendered assets](./assets) |
+| Reproduction and validation records | Unified reproduction entry point, regression tests, file fingerprints, and local validation records | [Reproduction entry](./reproduce.py) · [Tests](./tests) · [Provenance](./provenance) |
+
+## Global Environment Overview
+
+The saved-result reproduction workflow runs on Windows and Ubuntu/Linux with **Python 3.12 or later**. Its Python dependencies are listed in [requirements.txt](./requirements.txt):
+
+- `z3-solver` for symbolic disagreement queries and restricted emission checks;
+- `numpy` and `matplotlib` for paper figures and table previews.
+
+The GitHub [Core checks workflow](./.github/workflows/ci.yml) runs the unit tests, saved-result reproduction, candidate inference, and API example on Ubuntu.
+
+New C source verification uses a separate environment with the recorded **CBMC 6.11.0**, **ESBMC 8.6**, and **GCC 13.3** configuration. Source identities, wrapper definitions, generated-header settings, ABI assumptions, and checker flags are supplied in the dataset protocols. The [source-checking guide](./docs/source_checks.md) describes this workflow.
+
+## Bundled Reference Data
+
+The reference data are included in the repository checkout under [scguard/data](./scguard/data). The two experiment cohorts contain models, protocols, request records, native O0/O2 outputs, emitted C guards, saved compiled-guard outputs, and relational systems. The cross-family cohort also contains the original training observations used to reconstruct its candidates.
+
+| Cohort | Valid Requests | SUPPORT | REFUTE |
+| :--- | ---: | ---: | ---: |
+| Writer, typed policy | 122,880 | 72,162 | 50,718 |
+| Cross-family, completed source routes | 49,896 | 13,076 | 36,820 |
+
+The writer guard provides **4.8 times the determinate coverage** of whole-entry identity on the matched catalogue. Cross-family replay checks **2,592 affine certificates** and **648 integer or ordered-return systems**, including the resolution of **17,496 intermediate abstentions** on the same valid requests. Both final cohorts have zero incorrect determinate decisions on their saved catalogues. Intermediate outcomes, comparison-policy errors, and malformed-request controls remain in the data.
+
+Verify the **242 reference files** against [their SHA-256 manifest](./scguard/data/manifest.sha256.json):
+
+```bash
+python -m scguard verify-data
+```
+
+Record layouts and cohort contents are documented in [docs/data.md](./docs/data.md).
+
+## Quick Installation
+
+Clone the repository and install the Python dependencies:
+
+```bash
+git clone https://github.com/1251408860-oss/RelGuard.git
+cd RelGuard
 python -m pip install -r requirements.txt
+```
+
+Run the following commands from the repository root.
+
+### Reproduce the saved experiments and paper figures
+
+```bash
 python reproduce.py
 ```
 
-The second command verifies the reference files, replays both saved studies, regenerates four figures and two tables, and exports an example CRC guard and relational kernel. Results appear in `build/`.
+This command verifies the reference files, replays both experiment cohorts, rebuilds the four figures and two tables, and exports an example CRC guard and checked relational kernel. It uses the bundled execution records.
 
-Run the tests:
+| Output | Contents |
+| :--- | :--- |
+| `build/replay.json` | Recomputed results for 172,776 valid requests and the affine-certificate checks |
+| `build/figures/` | Four figure sets, two table previews, editable TeX tables, and layout/color checks |
+| `build/crc_kernel.json` | CRC relational equations and independently checked elimination certificate |
+| `build/crc_guard.c` | Example executable CRC guard |
+| `build/reproduction.json` | Reproduction summary |
 
-```sh
-python -m unittest discover -s tests -v
-```
+### Reconstruct candidates and export guards
 
-## Code layout
-
-```text
-scguard/
-  models/       writer projections, affine states, integer and ordered models
-  inference/    active writer queries and fitting from saved native observations
-  checks/       independent model, emission, certificate and source-field checks
-  source/       CRC composition and arithmetic source obligations
-  codegen/      checked integer-prefix emission
-  plotting/     current architecture figures, experiment plots and table previews
-  core.py       public model and guard interface
-  reference.py  reference-data readers and integrity checks
-  replay.py     saved-result verification
-  data/         reference models, protocols and execution records
-tests/          regression and inference checks
-examples/       executable API example
-assets/         rendered paper figures and tables
-reproduce.py    complete saved-result and figure reproduction
-```
-
-Each function has one current implementation. The code uses package-relative imports. Historical experiment runners and earlier alternative implementations are kept in the original project archive.
-
-## Commands
-
-```sh
-python -m scguard --help
-python -m scguard verify-data
-python -m scguard replay --cohort all --output build/replay.json
+```bash
 python -m scguard infer --task miniz-3.1.0-crc32 --output build/crc-model.json
-python -m scguard kernel --left miniz-3.1.0-crc32 --right miniz-3.1.1-crc32 --observer return --output build/crc-kernel.json
 python -m scguard export --left miniz-3.1.0-adler32 --right miniz-3.1.1-adler32 --output build/adler-guard.c
 python -m scguard export --cohort writer --left libgrapheme-2.0.1 --right libgrapheme-2.0.2 --output build/writer-guard.c
-python -m scguard harness --task miniz-3.1.0-crc32 --route crc-step --output build/crc-step.c
-python -m scguard figures --output build/figures
 python -m examples.quickstart
 ```
 
-`infer` reconstructs a candidate from the bundled cross-family training observations. Writer inference accepts an oracle callback through `scguard.inference.active.learn_writer`. Candidate fitting and source admission are separate operations; the inference command reports both explicitly.
+The inference command fits a cross-family candidate from its saved training observations. Writer active inference accepts a native-observation callback through `scguard.inference.active.learn_writer`. Source admission establishes the candidate's connection to C under the recorded call premises.
 
-## Reference results
+### Run validation checks
 
-| Study | Valid requests | SUPPORT | REFUTE | Invalid controls |
-| --- | ---: | ---: | ---: | ---: |
-| Writer, typed policy | 122,880 | 72,162 | 50,718 | 32 UNKNOWN |
-| Cross-family, completed route | 49,896 | 13,076 | 36,820 | 32 UNKNOWN |
+```bash
+python -m unittest discover -s tests -v
+```
 
-The replay also checks the writer comparison policies and their incorrect determinate results, the intermediate cross-family outcomes, and 2,592 affine certificates. Its model predictions and saved compiled-guard answers are compared with native O0/O2 outputs. The typed writer policy provides 4.8 times the determinate coverage of whole-entry identity.
+The **28 tests** cover model schemas, invalid requests, active inference, candidate reconstruction, emission mutations, elimination-certificate mutations, exact guard regeneration, and source-field admission.
 
-## Figures and environment
+### Recheck C source obligations
 
-![System overview](assets/fig01_system_overview.png)
+Prepare the specified upstream source files, generated headers, and C verification tools before running new source checks. Generate an obligation with:
 
-The current figure implementation is `scguard/plotting/figures.py`. It preserves the author's adjusted equality panel and straight connectors. Text and box borders are black. Editable PDF/SVG figures and TeX tables are included in `assets/`.
+```bash
+python -m scguard harness --task miniz-3.1.0-crc32 --route crc-step --output build/checks/crc-step.c
+```
 
-The bundled workflow and `reproduce.py` run saved-data checks. New C source verification needs the recorded upstream sources and CBMC/ESBMC environment; see [Source checking](docs/source_checks.md). The data include fixed source identifiers, assumptions and checker flags.
+The [source-checking guide](./docs/source_checks.md) lists the available routes, their premises, source preparation, and raw-result interpretation. New checks retain their execution receipts alongside earlier outcomes.
+
+Detailed API usage, data formats, and source-verification requirements are documented in [the implementation guide](./docs/implementation.md), [the data guide](./docs/data.md), and [the source-checking guide](./docs/source_checks.md). `python -m scguard --help` lists the individual commands.
 
 ## Notices
 
-No license has been selected for the project's own code. Third-party font notices are retained in [NOTICE.md](NOTICE.md) and `third_party/`.
+The project's own code currently has no license grant. Third-party font notices are retained in [NOTICE.md](./NOTICE.md) and [third_party](./third_party).
