@@ -1529,8 +1529,8 @@
     },
     {
       "path": "tests/test_core.py",
-      "sha256": "9bd88e95fbe9817c892d2eac94f4d72ddcd3f21911aba5bd611f7ad1a68f7dba",
-      "bytes": 10239
+      "sha256": "427f41d1ba44499590db187fd5bffb0af7fec865ffde3fb922be233236bda3bc",
+      "bytes": 10431
     },
     {
       "path": "tests/test_inference.py",

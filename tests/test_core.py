@@ -23,6 +23,9 @@ class CoreTests(unittest.TestCase):
     def test_all_modules_import_without_external_jobs(self):
         import pkgutil
         import scguard
+        # Linux initializes the third-party font cache through fc-list.
+        # Initialize it before checking the project's module imports.
+        import matplotlib.pyplot  # noqa: F401
 
         names = [
             row.name for row in pkgutil.walk_packages(scguard.__path__, scguard.__name__ + ".")
