@@ -1,0 +1,69 @@
+{
+  "all_checks_passed": true,
+  "source_identities": 6,
+  "API_version_tasks": 12,
+  "adjacent_API_pairs": 8,
+  "configuration_observer_systems": 3240,
+  "admitted_systems": 1296,
+  "requests": 49896,
+  "invalid_requests": 32,
+  "counts": {
+    "REFUTE": 21024,
+    "full_candidate_gate_UNKNOWN": 29646,
+    "SUPPORT": 11376,
+    "UNKNOWN": 17496,
+    "additional_partial_field_decisions": 12150
+  },
+  "wrong_determinate_decisions": 0,
+  "field_gate_qualified_partial_contracts": 3,
+  "full_contract_tasks": 3,
+  "rank_ranges": {
+    "crc32": [
+      [
+        "buffer8",
+        64,
+        false
+      ],
+      [
+        "first4",
+        32,
+        false
+      ],
+      [
+        "full",
+        96,
+        false
+      ],
+      [
+        "last4",
+        32,
+        false
+      ],
+      [
+        "return",
+        32,
+        false
+      ]
+    ],
+    "adler32": [
+      [
+        "buffer8",
+        64,
+        false
+      ],
+      [
+        "first4",
+        32,
+        false
+      ],
+      [
+        "last4",
+        32,
+        false
+      ]
+    ]
+  },
+  "constructed_requests_not_independent_programs": true,
+  "no_general_C_or_new_algebra_claim": true,
+  "new_humans": 0
+}

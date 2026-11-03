@@ -1,0 +1,106 @@
+[
+  {
+    "left": "miniz-3.1.0-crc32",
+    "right": "miniz-3.1.1-crc32",
+    "requests": 10125,
+    "invalid_requests": 4,
+    "systems": 405,
+    "counts": {
+      "REFUTE": 6624,
+      "SUPPORT": 3501
+    },
+    "all_compiled_matches": true,
+    "prior_requests_not_rerun_natively": true
+  },
+  {
+    "left": "miniz-3.1.1-crc32",
+    "right": "miniz-3.1.2-crc32",
+    "requests": 10125,
+    "invalid_requests": 4,
+    "systems": 405,
+    "counts": {
+      "REFUTE": 6624,
+      "SUPPORT": 3501
+    },
+    "all_compiled_matches": true,
+    "prior_requests_not_rerun_natively": true
+  },
+  {
+    "left": "miniz-3.1.0-adler32",
+    "right": "miniz-3.1.1-adler32",
+    "requests": 7533,
+    "invalid_requests": 4,
+    "systems": 405,
+    "counts": {
+      "SUPPORT": 2213,
+      "REFUTE": 5320
+    },
+    "all_compiled_matches": true,
+    "prior_requests_not_rerun_natively": true
+  },
+  {
+    "left": "miniz-3.1.1-adler32",
+    "right": "miniz-3.1.2-adler32",
+    "requests": 7533,
+    "invalid_requests": 4,
+    "systems": 405,
+    "counts": {
+      "SUPPORT": 2213,
+      "REFUTE": 5320
+    },
+    "all_compiled_matches": true,
+    "prior_requests_not_rerun_natively": true
+  },
+  {
+    "left": "musl-1.2.4-memmove",
+    "right": "musl-1.2.5-memmove",
+    "requests": 3645,
+    "invalid_requests": 4,
+    "systems": 405,
+    "counts": {
+      "SUPPORT": 291,
+      "REFUTE": 3354
+    },
+    "all_compiled_matches": true,
+    "prior_requests_not_rerun_natively": true
+  },
+  {
+    "left": "musl-1.2.5-memmove",
+    "right": "musl-1.2.6-memmove",
+    "requests": 3645,
+    "invalid_requests": 4,
+    "systems": 405,
+    "counts": {
+      "SUPPORT": 292,
+      "REFUTE": 3353
+    },
+    "all_compiled_matches": true,
+    "prior_requests_not_rerun_natively": true
+  },
+  {
+    "left": "musl-1.2.4-memcmp_sign",
+    "right": "musl-1.2.5-memcmp_sign",
+    "requests": 3645,
+    "invalid_requests": 4,
+    "systems": 405,
+    "counts": {
+      "SUPPORT": 534,
+      "REFUTE": 3111
+    },
+    "all_compiled_matches": true,
+    "prior_requests_not_rerun_natively": true
+  },
+  {
+    "left": "musl-1.2.5-memcmp_sign",
+    "right": "musl-1.2.6-memcmp_sign",
+    "requests": 3645,
+    "invalid_requests": 4,
+    "systems": 405,
+    "counts": {
+      "SUPPORT": 531,
+      "REFUTE": 3114
+    },
+    "all_compiled_matches": true,
+    "prior_requests_not_rerun_natively": true
+  }
+]

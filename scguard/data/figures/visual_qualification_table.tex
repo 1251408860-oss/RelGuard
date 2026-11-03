@@ -1,0 +1,8 @@
+\begin{tabularx}{\textwidth}{@{}lcccX@{}}\toprule
+API & Frozen first & Intermediate & Qualified & Final source connection \\
+\midrule
+CRC-32 & 0/0/3 & 3/0/0 & 3/0/0 & Original step and stream checks, DFCC frame and coefficient composition\\
+Adler-32 & 0/0/3 & 0/3/0 & 3/0/0 & Original range checks, arithmetic normalization and checked prefix emission\\
+Memory move & 0/0/3 & 0/0/3 & 3/0/0 & Original C checked by CBMC and joint ESBMC solving\\
+Compare sign & 0/0/3 & 0/0/3 & 3/0/0 & Original CBMC, typed conditional rule and normalized ESBMC check\\
+\bottomrule\end{tabularx}

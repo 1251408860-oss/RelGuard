@@ -1,0 +1,280 @@
+{
+  "valid_requests": 49896,
+  "invalid_controls_separate": 32,
+  "same_immutable_request_catalogue": true,
+  "all_counts_read_from_saved_results": true,
+  "api_groups": [
+    {
+      "api": "crc32",
+      "label": "CRC-32",
+      "requests": 20250,
+      "intermediate": {
+        "SUPPORT": 7002,
+        "REFUTE": 13248,
+        "UNKNOWN": 0
+      },
+      "qualified": {
+        "SUPPORT": 7002,
+        "REFUTE": 13248,
+        "UNKNOWN": 0
+      },
+      "pairs": [
+        [
+          "miniz-3.1.0-crc32",
+          "miniz-3.1.1-crc32"
+        ],
+        [
+          "miniz-3.1.1-crc32",
+          "miniz-3.1.2-crc32"
+        ]
+      ]
+    },
+    {
+      "api": "adler32",
+      "label": "Adler-32",
+      "requests": 15066,
+      "intermediate": {
+        "SUPPORT": 4374,
+        "REFUTE": 7776,
+        "UNKNOWN": 2916
+      },
+      "qualified": {
+        "SUPPORT": 4426,
+        "REFUTE": 10640,
+        "UNKNOWN": 0
+      },
+      "pairs": [
+        [
+          "miniz-3.1.0-adler32",
+          "miniz-3.1.1-adler32"
+        ],
+        [
+          "miniz-3.1.1-adler32",
+          "miniz-3.1.2-adler32"
+        ]
+      ]
+    },
+    {
+      "api": "memmove",
+      "label": "Memory move",
+      "requests": 7290,
+      "intermediate": {
+        "SUPPORT": 0,
+        "REFUTE": 0,
+        "UNKNOWN": 7290
+      },
+      "qualified": {
+        "SUPPORT": 583,
+        "REFUTE": 6707,
+        "UNKNOWN": 0
+      },
+      "pairs": [
+        [
+          "musl-1.2.4-memmove",
+          "musl-1.2.5-memmove"
+        ],
+        [
+          "musl-1.2.5-memmove",
+          "musl-1.2.6-memmove"
+        ]
+      ]
+    },
+    {
+      "api": "memcmp_sign",
+      "label": "Compare sign",
+      "requests": 7290,
+      "intermediate": {
+        "SUPPORT": 0,
+        "REFUTE": 0,
+        "UNKNOWN": 7290
+      },
+      "qualified": {
+        "SUPPORT": 1065,
+        "REFUTE": 6225,
+        "UNKNOWN": 0
+      },
+      "pairs": [
+        [
+          "musl-1.2.4-memcmp_sign",
+          "musl-1.2.5-memcmp_sign"
+        ],
+        [
+          "musl-1.2.5-memcmp_sign",
+          "musl-1.2.6-memcmp_sign"
+        ]
+      ]
+    }
+  ],
+  "contract_stages": [
+    {
+      "label": "Frozen first application",
+      "full": 0,
+      "partial": 0,
+      "unknown": 12
+    },
+    {
+      "label": "Intermediate field gate",
+      "full": 3,
+      "partial": 3,
+      "unknown": 6
+    },
+    {
+      "label": "Qualified completion",
+      "full": 12,
+      "partial": 0,
+      "unknown": 0
+    }
+  ],
+  "cost_rows": [
+    {
+      "category": "Metadata / source / tool setup",
+      "cells": [
+        {
+          "jobs": 25,
+          "sum_job_wall_seconds": 740.0501405000041
+        },
+        {
+          "jobs": 9,
+          "sum_job_wall_seconds": 325.78141250000226
+        },
+        {
+          "jobs": 3,
+          "sum_job_wall_seconds": 37.45913090000249
+        }
+      ]
+    },
+    {
+      "category": "Native builds and queries",
+      "cells": [
+        {
+          "jobs": 62,
+          "sum_job_wall_seconds": 871.7602977000051
+        },
+        {
+          "jobs": 54,
+          "sum_job_wall_seconds": 626.472905599996
+        },
+        {
+          "jobs": 18,
+          "sum_job_wall_seconds": 197.16064520000873
+        }
+      ]
+    },
+    {
+      "category": "CBMC, including controls",
+      "cells": [
+        {
+          "jobs": 32,
+          "sum_job_wall_seconds": 439.88040449999517
+        },
+        {
+          "jobs": 37,
+          "sum_job_wall_seconds": 1808.2607185999896
+        },
+        {
+          "jobs": 34,
+          "sum_job_wall_seconds": 1455.0322659000194
+        }
+      ]
+    },
+    {
+      "category": "ESBMC, including controls",
+      "cells": [
+        {
+          "jobs": 20,
+          "sum_job_wall_seconds": 300.98941300000206
+        },
+        {
+          "jobs": 44,
+          "sum_job_wall_seconds": 3083.8563354000034
+        },
+        {
+          "jobs": 39,
+          "sum_job_wall_seconds": 1540.576763500012
+        }
+      ]
+    },
+    {
+      "category": "GOTO / DFCC construction",
+      "cells": [
+        {
+          "jobs": 0,
+          "sum_job_wall_seconds": 0
+        },
+        {
+          "jobs": 22,
+          "sum_job_wall_seconds": 267.25100000000384
+        },
+        {
+          "jobs": 0,
+          "sum_job_wall_seconds": 0
+        }
+      ]
+    },
+    {
+      "category": "Paired kernel timing",
+      "cells": [
+        {
+          "jobs": 15,
+          "sum_job_wall_seconds": 207.35933209999894
+        },
+        {
+          "jobs": 0,
+          "sum_job_wall_seconds": 0
+        },
+        {
+          "jobs": 0,
+          "sum_job_wall_seconds": 0
+        }
+      ]
+    },
+    {
+      "category": "Compiled guard jobs",
+      "cells": [
+        {
+          "jobs": 8,
+          "sum_job_wall_seconds": 60.92006820000279
+        },
+        {
+          "jobs": 8,
+          "sum_job_wall_seconds": 91.73879430000306
+        },
+        {
+          "jobs": 8,
+          "sum_job_wall_seconds": 93.08138340000005
+        }
+      ]
+    },
+    {
+      "category": "Build / image / other C jobs",
+      "cells": [
+        {
+          "jobs": 25,
+          "sum_job_wall_seconds": 1511.3958326999973
+        },
+        {
+          "jobs": 0,
+          "sum_job_wall_seconds": 0
+        },
+        {
+          "jobs": 0,
+          "sum_job_wall_seconds": 0
+        }
+      ]
+    }
+  ],
+  "cost_totals": [
+    {
+      "jobs": 187,
+      "sum_job_wall_seconds": 4132.3554887000055
+    },
+    {
+      "jobs": 174,
+      "sum_job_wall_seconds": 6203.361166399998
+    },
+    {
+      "jobs": 102,
+      "sum_job_wall_seconds": 3323.3101889000427
+    }
+  ]
+}

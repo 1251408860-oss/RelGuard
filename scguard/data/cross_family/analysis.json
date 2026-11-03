@@ -1,0 +1,32 @@
+{
+  "all_checks_passed": true,
+  "source_identities": 6,
+  "API_version_tasks": 12,
+  "full_observation_contracts": 12,
+  "partial_contracts": 0,
+  "current_unqualified_tasks": 0,
+  "adjacent_API_pairs": 8,
+  "configuration_observer_systems": 3240,
+  "admitted_systems": 3240,
+  "GF2_certificates": 2592,
+  "integer_or_order_return_systems_without_GF2_rank": 648,
+  "requests": 49896,
+  "invalid_requests": 32,
+  "counts": {
+    "REFUTE": 36820,
+    "SUPPORT": 13076
+  },
+  "valid_unknowns": 0,
+  "invalid_unknowns": 32,
+  "wrong_determinate_decisions": 0,
+  "previous_unknown_requests_newly_decided": 17496,
+  "original_v15_full_partial_unknown": [
+    3,
+    3,
+    6
+  ],
+  "original_first_whole_candidate_UNKNOWN": 12,
+  "no_original_ESBMC_alarm_or_timeout_overwritten": true,
+  "qualified_composition_not_all_direct_unmodified_source_two_engine_claim": true,
+  "new_humans": 0
+}

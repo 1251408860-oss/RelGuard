@@ -1,0 +1,70 @@
+{
+  "all_checks_passed": true,
+  "text_colour": "#000000",
+  "border_and_arrow_colour": "#000000",
+  "geometry_checks": [
+    {
+      "asset": "fig01_system_overview",
+      "labels_checked": 33,
+      "labels_outside_module_or_canvas": [],
+      "label_overlaps": [],
+      "wire_label_intersections": [],
+      "continuous_orthogonal_routes": 8,
+      "required_module_text_padding_points": 1.2,
+      "required_wire_text_clearance_points": 1.0,
+      "required_label_gap_points": 1.0
+    },
+    {
+      "asset": "fig02_request_decision",
+      "labels_checked": 13,
+      "labels_outside_module_or_canvas": [],
+      "label_overlaps": [],
+      "wire_label_intersections": [],
+      "continuous_orthogonal_routes": 9,
+      "required_module_text_padding_points": 1.2,
+      "required_wire_text_clearance_points": 1.0,
+      "required_label_gap_points": 1.0
+    }
+  ],
+  "text_checks": [
+    {
+      "asset": "fig01_system_overview",
+      "all_text_black": true,
+      "text_objects": 33,
+      "black_borders_checked": 33
+    },
+    {
+      "asset": "fig02_request_decision",
+      "all_text_black": true,
+      "text_objects": 13,
+      "black_borders_checked": 34
+    },
+    {
+      "asset": "fig03_contract_completion",
+      "all_text_black": true,
+      "text_objects": 16,
+      "black_borders_checked": 5
+    },
+    {
+      "asset": "fig04_request_outcomes",
+      "all_text_black": true,
+      "text_objects": 49,
+      "black_borders_checked": 15
+    },
+    {
+      "asset": "table01_guard_policies",
+      "all_text_black": true,
+      "text_objects": 25,
+      "black_borders_checked": 0
+    },
+    {
+      "asset": "table02_source_qualification",
+      "all_text_black": true,
+      "text_objects": 25,
+      "black_borders_checked": 0
+    }
+  ],
+  "figure_sets": 4,
+  "table_sets": 2,
+  "source_experiments_executed": 0
+}

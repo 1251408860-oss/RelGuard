@@ -1,0 +1,41 @@
+{
+  "premises": [
+    "exact bound source/build/wrapper identity",
+    "returning sequential call with normal static initialization",
+    "valid eight-byte private destination",
+    "declared input/capacity domain",
+    "no external interference"
+  ],
+  "mask_bits": {
+    "0": "normalized return",
+    "1": "destination byte 0",
+    "2": "destination byte 1",
+    "3": "destination byte 2",
+    "4": "destination byte 3",
+    "5": "destination byte 4",
+    "6": "destination byte 5",
+    "7": "destination byte 6",
+    "8": "destination byte 7"
+  },
+  "guard_sha256": "c0502d92ed443ef95dc303a51929ee9bdd389e56547f96dfe264752dd0d7f9dd",
+  "source_contracts": [
+    {
+      "id": "utf8h-552163f306c7",
+      "phase": "runs\\v5-bitguard-writer-frozen-20261102-v2\\targets\\utf8h-552163f306c7",
+      "contract_sha256": "3016c469fdd7a66c301173f59556515c04688642c20f23bbad80529206fc2346",
+      "acquisition_sha256": "fc11c81bce5b6bf7016c6a7c368a5c3c8a332b806982c0d0d8433b1b03f81c08",
+      "CBMC_receipt_sha256": "ab1e9eed14ae298b44aed2302904efa2eaa7b72abfa1e5219767ba13c307fb1e",
+      "ESBMC_receipt_sha256": "1af7ebe5d70b12074012bf20af13e54ce0498d0d4bbad2513256467cb16265be"
+    },
+    {
+      "id": "utf8h-8a37b279054b",
+      "phase": "runs\\v5-bitguard-writer-frozen-20261102-v2\\targets\\utf8h-8a37b279054b",
+      "contract_sha256": "3016c469fdd7a66c301173f59556515c04688642c20f23bbad80529206fc2346",
+      "acquisition_sha256": "bcece39fc14242db3a173ff612b332a112eb4c706a2746522b276cb90379e64a",
+      "CBMC_receipt_sha256": "88cfd20cb59c82a01b162e5e0a78c65ffb43c118c78bd57c10acd26479722fac",
+      "ESBMC_receipt_sha256": "4a7f2f348069b2214f9e6e1a4cad33c80e56479429b6cbd629c61b66756a2529"
+    }
+  ],
+  "UNEQUAL_refutes_only_requested_observational_equality": true,
+  "arbitrary_old_property_not_refuted": true
+}

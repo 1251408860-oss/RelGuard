@@ -1,0 +1,4 @@
+z3-solver>=4.13,<6
+matplotlib>=3.9,<4
+numpy>=1.26,<3
+

@@ -1,0 +1,267 @@
+{
+  "targets": [
+    {
+      "project": "miniz",
+      "version": "3.1.0",
+      "id": "miniz-3.1.0-crc32",
+      "commit": "174573d60290f447c13a2b1b3405de2b96e27d6c",
+      "url": "https://codeload.github.com/richgel999/miniz/tar.gz/174573d60290f447c13a2b1b3405de2b96e27d6c",
+      "identity": "numeric author tag resolved to fixed commit",
+      "api": "crc32",
+      "source_id": "miniz-3.1.0"
+    },
+    {
+      "project": "miniz",
+      "version": "3.1.0",
+      "id": "miniz-3.1.0-adler32",
+      "commit": "174573d60290f447c13a2b1b3405de2b96e27d6c",
+      "url": "https://codeload.github.com/richgel999/miniz/tar.gz/174573d60290f447c13a2b1b3405de2b96e27d6c",
+      "identity": "numeric author tag resolved to fixed commit",
+      "api": "adler32",
+      "source_id": "miniz-3.1.0"
+    },
+    {
+      "project": "miniz",
+      "version": "3.1.1",
+      "id": "miniz-3.1.1-crc32",
+      "commit": "d10b03cc73475af673df40f06e5cefd1d5f940d9",
+      "url": "https://codeload.github.com/richgel999/miniz/tar.gz/d10b03cc73475af673df40f06e5cefd1d5f940d9",
+      "identity": "numeric author tag resolved to fixed commit",
+      "api": "crc32",
+      "source_id": "miniz-3.1.1"
+    },
+    {
+      "project": "miniz",
+      "version": "3.1.1",
+      "id": "miniz-3.1.1-adler32",
+      "commit": "d10b03cc73475af673df40f06e5cefd1d5f940d9",
+      "url": "https://codeload.github.com/richgel999/miniz/tar.gz/d10b03cc73475af673df40f06e5cefd1d5f940d9",
+      "identity": "numeric author tag resolved to fixed commit",
+      "api": "adler32",
+      "source_id": "miniz-3.1.1"
+    },
+    {
+      "project": "miniz",
+      "version": "3.1.2",
+      "id": "miniz-3.1.2-crc32",
+      "commit": "77d0dce8627735138c51770d1799a1ef48f2117d",
+      "url": "https://codeload.github.com/richgel999/miniz/tar.gz/77d0dce8627735138c51770d1799a1ef48f2117d",
+      "identity": "numeric author tag resolved to fixed commit",
+      "api": "crc32",
+      "source_id": "miniz-3.1.2"
+    },
+    {
+      "project": "miniz",
+      "version": "3.1.2",
+      "id": "miniz-3.1.2-adler32",
+      "commit": "77d0dce8627735138c51770d1799a1ef48f2117d",
+      "url": "https://codeload.github.com/richgel999/miniz/tar.gz/77d0dce8627735138c51770d1799a1ef48f2117d",
+      "identity": "numeric author tag resolved to fixed commit",
+      "api": "adler32",
+      "source_id": "miniz-3.1.2"
+    },
+    {
+      "project": "musl",
+      "version": "1.2.4",
+      "id": "musl-1.2.4-memmove",
+      "url": "https://musl.libc.org/releases/musl-1.2.4.tar.gz",
+      "identity": "fixed numbered author distribution; HTTPS bytes, no GPG claim",
+      "api": "memmove",
+      "source_id": "musl-1.2.4"
+    },
+    {
+      "project": "musl",
+      "version": "1.2.4",
+      "id": "musl-1.2.4-memcmp_sign",
+      "url": "https://musl.libc.org/releases/musl-1.2.4.tar.gz",
+      "identity": "fixed numbered author distribution; HTTPS bytes, no GPG claim",
+      "api": "memcmp_sign",
+      "source_id": "musl-1.2.4"
+    },
+    {
+      "project": "musl",
+      "version": "1.2.5",
+      "id": "musl-1.2.5-memmove",
+      "url": "https://musl.libc.org/releases/musl-1.2.5.tar.gz",
+      "identity": "fixed numbered author distribution; HTTPS bytes, no GPG claim",
+      "api": "memmove",
+      "source_id": "musl-1.2.5"
+    },
+    {
+      "project": "musl",
+      "version": "1.2.5",
+      "id": "musl-1.2.5-memcmp_sign",
+      "url": "https://musl.libc.org/releases/musl-1.2.5.tar.gz",
+      "identity": "fixed numbered author distribution; HTTPS bytes, no GPG claim",
+      "api": "memcmp_sign",
+      "source_id": "musl-1.2.5"
+    },
+    {
+      "project": "musl",
+      "version": "1.2.6",
+      "id": "musl-1.2.6-memmove",
+      "url": "https://musl.libc.org/releases/musl-1.2.6.tar.gz",
+      "identity": "fixed numbered author distribution; HTTPS bytes, no GPG claim",
+      "api": "memmove",
+      "source_id": "musl-1.2.6"
+    },
+    {
+      "project": "musl",
+      "version": "1.2.6",
+      "id": "musl-1.2.6-memcmp_sign",
+      "url": "https://musl.libc.org/releases/musl-1.2.6.tar.gz",
+      "identity": "fixed numbered author distribution; HTTPS bytes, no GPG claim",
+      "api": "memcmp_sign",
+      "source_id": "musl-1.2.6"
+    }
+  ],
+  "sources": [
+    {
+      "project": "miniz",
+      "version": "3.1.0",
+      "id": "miniz-3.1.0",
+      "commit": "174573d60290f447c13a2b1b3405de2b96e27d6c",
+      "url": "https://codeload.github.com/richgel999/miniz/tar.gz/174573d60290f447c13a2b1b3405de2b96e27d6c",
+      "identity": "numeric author tag resolved to fixed commit"
+    },
+    {
+      "project": "miniz",
+      "version": "3.1.1",
+      "id": "miniz-3.1.1",
+      "commit": "d10b03cc73475af673df40f06e5cefd1d5f940d9",
+      "url": "https://codeload.github.com/richgel999/miniz/tar.gz/d10b03cc73475af673df40f06e5cefd1d5f940d9",
+      "identity": "numeric author tag resolved to fixed commit"
+    },
+    {
+      "project": "miniz",
+      "version": "3.1.2",
+      "id": "miniz-3.1.2",
+      "commit": "77d0dce8627735138c51770d1799a1ef48f2117d",
+      "url": "https://codeload.github.com/richgel999/miniz/tar.gz/77d0dce8627735138c51770d1799a1ef48f2117d",
+      "identity": "numeric author tag resolved to fixed commit"
+    },
+    {
+      "project": "musl",
+      "version": "1.2.4",
+      "id": "musl-1.2.4",
+      "url": "https://musl.libc.org/releases/musl-1.2.4.tar.gz",
+      "identity": "fixed numbered author distribution; HTTPS bytes, no GPG claim"
+    },
+    {
+      "project": "musl",
+      "version": "1.2.5",
+      "id": "musl-1.2.5",
+      "url": "https://musl.libc.org/releases/musl-1.2.5.tar.gz",
+      "identity": "fixed numbered author distribution; HTTPS bytes, no GPG claim"
+    },
+    {
+      "project": "musl",
+      "version": "1.2.6",
+      "id": "musl-1.2.6",
+      "url": "https://musl.libc.org/releases/musl-1.2.6.tar.gz",
+      "identity": "fixed numbered author distribution; HTTPS bytes, no GPG claim"
+    }
+  ],
+  "input_domain": "all uint32 seed bits and all 64 entry-object bits independently, nine explicit configurations",
+  "output_observer": "normalized uint32 return bits and eight final bytes",
+  "configurations": {
+    "miniz": "length 0..8",
+    "musl_n_src_dst": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        4,
+        0,
+        4
+      ],
+      [
+        4,
+        4,
+        0
+      ],
+      [
+        6,
+        0,
+        2
+      ],
+      [
+        6,
+        2,
+        0
+      ],
+      [
+        8,
+        0,
+        0
+      ],
+      [
+        1,
+        3,
+        4
+      ],
+      [
+        3,
+        1,
+        2
+      ],
+      [
+        3,
+        2,
+        1
+      ]
+    ]
+  },
+  "API_semantics": {
+    "crc32": "arbitrary uint32 prior crc; read eight-byte object up to length",
+    "adler32": "fixed initial Adler seed 1; x ignored",
+    "memmove": "original C units with within-object valid overlap and return pointer normalized to byte offset",
+    "memcmp_sign": "original C comparison, normalized negative/zero/positive class; x ignored"
+  },
+  "static_miniz_export_header": "#ifndef MINIZ_EXPORT_H\n#define MINIZ_EXPORT_H\n#define MINIZ_EXPORT\n#define MINIZ_NO_EXPORT\n#define MINIZ_DEPRECATED __attribute__((deprecated))\n#define MINIZ_DEPRECATED_EXPORT MINIZ_EXPORT MINIZ_DEPRECATED\n#define MINIZ_DEPRECATED_NO_EXPORT MINIZ_NO_EXPORT MINIZ_DEPRECATED\n#endif\n",
+  "disabled_miniz_features": [
+    "archive APIs",
+    "zlib stream APIs",
+    "zlib-compatible names"
+  ],
+  "musl_configuration": "complete original memcpy/memmove/memcmp C units renamed to avoid host builtins; host-image standard headers; not a full musl-linked operating system",
+  "basis": "origin plus 96 unit vectors for every configuration; no held-out answers used to fit",
+  "source_admission": "all nine fields and auxiliary checks supported by both tools; native held-out agreement required; REFUTE applies to proposed contract, not a general API-equivalence verdict",
+  "CBMC_flags": [
+    "--function",
+    "harness",
+    "--c11",
+    "--64",
+    "--little-endian",
+    "--bounds-check",
+    "--pointer-check",
+    "--pointer-overflow-check",
+    "--signed-overflow-check",
+    "--unwinding-assertions",
+    "--unwind",
+    "33",
+    "--trace",
+    "--json-ui"
+  ],
+  "ESBMC_flags": [
+    "--function",
+    "harness",
+    "--std",
+    "c11",
+    "--64",
+    "--little-endian",
+    "--unwind",
+    "33",
+    "--overflow-check",
+    "--ub-shift-check",
+    "--multi-property",
+    "--keep-verified-claims",
+    "-DBG_ESBMC"
+  ],
+  "includes": [
+    "-I/work/generated",
+    "-I/work/source"
+  ]
+}

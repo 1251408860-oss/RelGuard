@@ -1,0 +1,447 @@
+{
+  "initial_frozen": {
+    "path": "runs\\v5-bitguard-writer-frozen-20261102-v2",
+    "results": [
+      {
+        "id": "lua-5.4.7",
+        "project": "lua",
+        "version": "5.4.7",
+        "status": "UNKNOWN",
+        "CBMC": "UNKNOWN",
+        "ESBMC": "UNKNOWN",
+        "native_complete": false,
+        "candidate_matches_native": false,
+        "reason": "ValueError: Native O0 incomplete"
+      },
+      {
+        "id": "lua-5.4.8",
+        "project": "lua",
+        "version": "5.4.8",
+        "status": "UNKNOWN",
+        "CBMC": "UNKNOWN",
+        "ESBMC": "UNKNOWN",
+        "native_complete": false,
+        "candidate_matches_native": false,
+        "reason": "ValueError: Native O0 incomplete"
+      },
+      {
+        "id": "lua-5.4.9",
+        "project": "lua",
+        "version": "5.4.9",
+        "status": "UNKNOWN",
+        "CBMC": "UNKNOWN",
+        "ESBMC": "UNKNOWN",
+        "native_complete": false,
+        "candidate_matches_native": false,
+        "reason": "ValueError: Native O0 incomplete"
+      },
+      {
+        "id": "libgrapheme-2.0.1",
+        "project": "libgrapheme",
+        "version": "2.0.1",
+        "status": "UNKNOWN",
+        "CBMC": "UNKNOWN",
+        "ESBMC": "UNKNOWN",
+        "native_complete": true,
+        "candidate_matches_native": false,
+        "reason": "ValueError: Candidate disagrees with held-out native behavior"
+      },
+      {
+        "id": "libgrapheme-2.0.2",
+        "project": "libgrapheme",
+        "version": "2.0.2",
+        "status": "UNKNOWN",
+        "CBMC": "UNKNOWN",
+        "ESBMC": "UNKNOWN",
+        "native_complete": true,
+        "candidate_matches_native": false,
+        "reason": "ValueError: Candidate disagrees with held-out native behavior"
+      },
+      {
+        "id": "libgrapheme-3.0.0",
+        "project": "libgrapheme",
+        "version": "3.0.0",
+        "status": "UNKNOWN",
+        "CBMC": "UNKNOWN",
+        "ESBMC": "UNKNOWN",
+        "native_complete": false,
+        "candidate_matches_native": false,
+        "reason": "ValueError: Source acquisition refused"
+      },
+      {
+        "id": "utf8h-5724390ef02d",
+        "project": "utf8h",
+        "version": "5724390ef02deb061fb00caad08c7ab9972fc65e",
+        "status": "SUPPORT",
+        "CBMC": "SUPPORT",
+        "ESBMC": "SUPPORT",
+        "native_complete": true,
+        "candidate_matches_native": true,
+        "summary_cells": 30,
+        "tamper_status": "REFUTE"
+      },
+      {
+        "id": "utf8h-552163f306c7",
+        "project": "utf8h",
+        "version": "552163f306c7d02bd1ac6b5a25e346d59e1e3d30",
+        "status": "SUPPORT",
+        "CBMC": "SUPPORT",
+        "ESBMC": "SUPPORT",
+        "native_complete": true,
+        "candidate_matches_native": true,
+        "summary_cells": 30,
+        "tamper_status": "REFUTE"
+      },
+      {
+        "id": "utf8h-8a37b279054b",
+        "project": "utf8h",
+        "version": "8a37b279054b0f573e461a1c478db27cb42265cb",
+        "status": "SUPPORT",
+        "CBMC": "SUPPORT",
+        "ESBMC": "SUPPORT",
+        "native_complete": true,
+        "candidate_matches_native": true,
+        "summary_cells": 30,
+        "tamper_status": "REFUTE"
+      }
+    ]
+  },
+  "Lua_linker_only_repair": {
+    "path": "runs\\v5-bitguard-Lua-build-repair-20261102-v1",
+    "results": [
+      {
+        "id": "lua-5.4.7",
+        "project": "lua",
+        "version": "5.4.7",
+        "status": "SUPPORT",
+        "CBMC": "SUPPORT",
+        "ESBMC": "SUPPORT",
+        "native_complete": true,
+        "candidate_matches_native": true,
+        "summary_cells": 4,
+        "tamper_status": "REFUTE"
+      },
+      {
+        "id": "lua-5.4.8",
+        "project": "lua",
+        "version": "5.4.8",
+        "status": "SUPPORT",
+        "CBMC": "SUPPORT",
+        "ESBMC": "SUPPORT",
+        "native_complete": true,
+        "candidate_matches_native": true,
+        "summary_cells": 4,
+        "tamper_status": "REFUTE"
+      },
+      {
+        "id": "lua-5.4.9",
+        "project": "lua",
+        "version": "5.4.9",
+        "status": "SUPPORT",
+        "CBMC": "SUPPORT",
+        "ESBMC": "SUPPORT",
+        "native_complete": true,
+        "candidate_matches_native": true,
+        "summary_cells": 4,
+        "tamper_status": "REFUTE"
+      }
+    ]
+  },
+  "active_development_and_GNU_frozen": {
+    "path": "runs\\v5-bitguard-active-development-and-GNU-frozen-20261102-v3",
+    "results": [
+      {
+        "id": "libgrapheme-2.0.1",
+        "project": "libgrapheme",
+        "version": "2.0.1",
+        "role": "source_informed_active_method_development",
+        "status": "UNKNOWN",
+        "CBMC": "UNKNOWN",
+        "ESBMC": "UNKNOWN",
+        "native_complete": true,
+        "candidate_matches_native": false,
+        "native_reused_readonly": true,
+        "reason": "OSError: exception: access violation reading 0x0000000000000010"
+      },
+      {
+        "id": "libgrapheme-2.0.2",
+        "project": "libgrapheme",
+        "version": "2.0.2",
+        "role": "source_informed_active_method_development",
+        "status": "UNKNOWN",
+        "CBMC": "UNKNOWN",
+        "ESBMC": "UNKNOWN",
+        "native_complete": true,
+        "candidate_matches_native": false,
+        "native_reused_readonly": true,
+        "reason": "Z3Exception: b'ast is not an expression'"
+      },
+      {
+        "id": "libgrapheme-3.0.0",
+        "project": "libgrapheme",
+        "version": "3.0.0",
+        "role": "source_informed_active_method_development",
+        "status": "UNKNOWN",
+        "CBMC": "UNKNOWN",
+        "ESBMC": "UNKNOWN",
+        "native_complete": true,
+        "candidate_matches_native": false,
+        "native_reused_readonly": true,
+        "reason": "Z3Exception: b'unreachable'"
+      },
+      {
+        "id": "libunistring-1.4.1",
+        "project": "libunistring",
+        "version": "1.4.1",
+        "role": "new_project_frozen_application_after_active_method_development",
+        "status": "UNKNOWN",
+        "CBMC": "UNKNOWN",
+        "ESBMC": "UNKNOWN",
+        "native_complete": false,
+        "candidate_matches_native": false,
+        "reason": "ValueError: Full upstream configuration/build"
+      },
+      {
+        "id": "libunistring-1.4.2",
+        "project": "libunistring",
+        "version": "1.4.2",
+        "role": "new_project_frozen_application_after_active_method_development",
+        "status": "UNKNOWN",
+        "CBMC": "UNKNOWN",
+        "ESBMC": "UNKNOWN",
+        "native_complete": false,
+        "candidate_matches_native": false,
+        "reason": "ValueError: Full upstream configuration/build"
+      },
+      {
+        "id": "libunistring-1.5",
+        "project": "libunistring",
+        "version": "1.5",
+        "role": "new_project_frozen_application_after_active_method_development",
+        "status": "UNKNOWN",
+        "CBMC": "UNKNOWN",
+        "ESBMC": "UNKNOWN",
+        "native_complete": false,
+        "candidate_matches_native": false,
+        "reason": "ValueError: Full upstream configuration/build"
+      }
+    ]
+  },
+  "boundary_parallel_refusal": {
+    "path": "runs\\v5-bitguard-boundary-refinement-20261102-v3",
+    "results": [
+      {
+        "id": "libgrapheme-2.0.1",
+        "project": "libgrapheme",
+        "version": "2.0.1",
+        "role": "source_informed_active_method_development",
+        "status": "UNKNOWN",
+        "CBMC": "UNKNOWN",
+        "ESBMC": "UNKNOWN",
+        "native_complete": true,
+        "candidate_matches_native": false,
+        "native_reused_readonly": true,
+        "reason": "Z3Exception: b'unreachable'"
+      },
+      {
+        "id": "libgrapheme-2.0.2",
+        "project": "libgrapheme",
+        "version": "2.0.2",
+        "role": "source_informed_active_method_development",
+        "status": "UNKNOWN",
+        "CBMC": "UNKNOWN",
+        "ESBMC": "UNKNOWN",
+        "native_complete": true,
+        "candidate_matches_native": false,
+        "native_reused_readonly": true,
+        "reason": "Z3Exception: b'unreachable'"
+      },
+      {
+        "id": "libgrapheme-3.0.0",
+        "project": "libgrapheme",
+        "version": "3.0.0",
+        "role": "source_informed_active_method_development",
+        "status": "UNKNOWN",
+        "CBMC": "UNKNOWN",
+        "ESBMC": "UNKNOWN",
+        "native_complete": true,
+        "candidate_matches_native": false,
+        "native_reused_readonly": true,
+        "reason": "Z3Exception: b'unreachable'"
+      }
+    ]
+  },
+  "boundary_sequential_recovery": {
+    "path": "runs\\v5-bitguard-sequential-recovery-20261102-v4",
+    "results": [
+      {
+        "id": "libgrapheme-2.0.1",
+        "project": "libgrapheme",
+        "version": "2.0.1",
+        "role": "source_informed_active_method_development",
+        "status": "SUPPORT",
+        "CBMC": "SUPPORT",
+        "ESBMC": "SUPPORT",
+        "native_complete": true,
+        "candidate_matches_native": true,
+        "native_reused_readonly": true,
+        "tamper_status": "REFUTE",
+        "summary_cells": 48
+      },
+      {
+        "id": "libgrapheme-2.0.2",
+        "project": "libgrapheme",
+        "version": "2.0.2",
+        "role": "source_informed_active_method_development",
+        "status": "SUPPORT",
+        "CBMC": "SUPPORT",
+        "ESBMC": "SUPPORT",
+        "native_complete": true,
+        "candidate_matches_native": true,
+        "native_reused_readonly": true,
+        "tamper_status": "REFUTE",
+        "summary_cells": 48
+      },
+      {
+        "id": "libgrapheme-3.0.0",
+        "project": "libgrapheme",
+        "version": "3.0.0",
+        "role": "source_informed_active_method_development",
+        "status": "SUPPORT",
+        "CBMC": "SUPPORT",
+        "ESBMC": "SUPPORT",
+        "native_complete": true,
+        "candidate_matches_native": true,
+        "native_reused_readonly": true,
+        "tamper_status": "REFUTE",
+        "summary_cells": 48
+      }
+    ]
+  },
+  "GNU_timestamp_build_recovery": {
+    "path": "runs\\v5-bitguard-GNU-build-recovery-20261102-v4",
+    "results": [
+      {
+        "id": "libunistring-1.4.1",
+        "project": "libunistring",
+        "version": "1.4.1",
+        "role": "new_project_frozen_application_after_active_method_development",
+        "status": "UNKNOWN",
+        "CBMC": "UNKNOWN",
+        "ESBMC": "UNKNOWN",
+        "native_complete": false,
+        "candidate_matches_native": false,
+        "reason": "OSError: [WinError 1920] 系统无法访问此文件。: 'project:/runs\\\\v5-bitguard-GNU-build-recovery-20261102-v4\\\\targets\\\\libunistring-1.4.1\\\\build\\\\lib\\\\.libs\\\\libunistring.la'"
+      },
+      {
+        "id": "libunistring-1.4.2",
+        "project": "libunistring",
+        "version": "1.4.2",
+        "role": "new_project_frozen_application_after_active_method_development",
+        "status": "UNKNOWN",
+        "CBMC": "UNKNOWN",
+        "ESBMC": "UNKNOWN",
+        "native_complete": false,
+        "candidate_matches_native": false,
+        "reason": "OSError: [WinError 1920] 系统无法访问此文件。: 'project:/runs\\\\v5-bitguard-GNU-build-recovery-20261102-v4\\\\targets\\\\libunistring-1.4.2\\\\build\\\\lib\\\\.libs\\\\libunistring.la'"
+      },
+      {
+        "id": "libunistring-1.5",
+        "project": "libunistring",
+        "version": "1.5",
+        "role": "new_project_frozen_application_after_active_method_development",
+        "status": "UNKNOWN",
+        "CBMC": "UNKNOWN",
+        "ESBMC": "UNKNOWN",
+        "native_complete": false,
+        "candidate_matches_native": false,
+        "reason": "OSError: [WinError 1920] 系统无法访问此文件。: 'project:/runs\\\\v5-bitguard-GNU-build-recovery-20261102-v4\\\\targets\\\\libunistring-1.5\\\\build\\\\lib\\\\.libs\\\\libunistring.la'"
+      }
+    ]
+  },
+  "GNU_config_header_refusal": {
+    "path": "runs\\v5-bitguard-GNU-receipt-recovery-20261102-v6",
+    "results": [
+      {
+        "id": "libunistring-1.4.1",
+        "project": "libunistring",
+        "version": "1.4.1",
+        "role": "new_project_frozen_application_after_active_method_development",
+        "status": "UNKNOWN",
+        "CBMC": "UNKNOWN",
+        "ESBMC": "UNKNOWN",
+        "native_complete": false,
+        "candidate_matches_native": false,
+        "reason": "ValueError: Initial native qualification"
+      },
+      {
+        "id": "libunistring-1.4.2",
+        "project": "libunistring",
+        "version": "1.4.2",
+        "role": "new_project_frozen_application_after_active_method_development",
+        "status": "UNKNOWN",
+        "CBMC": "UNKNOWN",
+        "ESBMC": "UNKNOWN",
+        "native_complete": false,
+        "candidate_matches_native": false,
+        "reason": "ValueError: Initial native qualification"
+      },
+      {
+        "id": "libunistring-1.5",
+        "project": "libunistring",
+        "version": "1.5",
+        "role": "new_project_frozen_application_after_active_method_development",
+        "status": "UNKNOWN",
+        "CBMC": "UNKNOWN",
+        "ESBMC": "UNKNOWN",
+        "native_complete": false,
+        "candidate_matches_native": false,
+        "reason": "ValueError: Initial native qualification"
+      }
+    ]
+  },
+  "GNU_config_header_driver_recovery": {
+    "path": "runs\\v5-bitguard-GNU-driver-recovery-20261102-v7",
+    "results": [
+      {
+        "id": "libunistring-1.4.1",
+        "project": "libunistring",
+        "version": "1.4.1",
+        "role": "new_project_frozen_application_after_active_method_development",
+        "status": "SUPPORT",
+        "CBMC": "SUPPORT",
+        "ESBMC": "SUPPORT",
+        "native_complete": true,
+        "candidate_matches_native": true,
+        "tamper_status": "REFUTE",
+        "summary_cells": 48
+      },
+      {
+        "id": "libunistring-1.4.2",
+        "project": "libunistring",
+        "version": "1.4.2",
+        "role": "new_project_frozen_application_after_active_method_development",
+        "status": "SUPPORT",
+        "CBMC": "SUPPORT",
+        "ESBMC": "SUPPORT",
+        "native_complete": true,
+        "candidate_matches_native": true,
+        "tamper_status": "REFUTE",
+        "summary_cells": 48
+      },
+      {
+        "id": "libunistring-1.5",
+        "project": "libunistring",
+        "version": "1.5",
+        "role": "new_project_frozen_application_after_active_method_development",
+        "status": "SUPPORT",
+        "CBMC": "SUPPORT",
+        "ESBMC": "SUPPORT",
+        "native_complete": true,
+        "candidate_matches_native": true,
+        "tamper_status": "REFUTE",
+        "summary_cells": 48
+      }
+    ]
+  }
+}

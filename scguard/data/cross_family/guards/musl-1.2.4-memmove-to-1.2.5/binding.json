@@ -1,0 +1,31 @@
+{
+  "left": {
+    "project": "musl",
+    "version": "1.2.4",
+    "id": "musl-1.2.4-memmove",
+    "url": "https://musl.libc.org/releases/musl-1.2.4.tar.gz",
+    "identity": "fixed numbered author distribution; HTTPS bytes, no GPG claim",
+    "api": "memmove",
+    "source_id": "musl-1.2.4"
+  },
+  "right": {
+    "project": "musl",
+    "version": "1.2.5",
+    "id": "musl-1.2.5-memmove",
+    "url": "https://musl.libc.org/releases/musl-1.2.5.tar.gz",
+    "identity": "fixed numbered author distribution; HTTPS bytes, no GPG claim",
+    "api": "memmove",
+    "source_id": "musl-1.2.5"
+  },
+  "left_route": "unchanged_original_C_both_prior_CBMC_and_new_joint_ESBMC",
+  "right_route": "unchanged_original_C_both_prior_CBMC_and_new_joint_ESBMC",
+  "left_model_sha256": "3542eea5872172a4ecdb1da37b3d6cb182bfd63f2f6752d82838fba2c3d37a82",
+  "right_model_sha256": "3542eea5872172a4ecdb1da37b3d6cb182bfd63f2f6752d82838fba2c3d37a82",
+  "guard_sha256": "8b84feac60246b0bfd3d0216d50d5900a05e6a1fc76e9796518a248de7590264",
+  "same_request_bytes_as": {
+    "path": "reports/affine_observer_final_20261102_v2/guards/musl-1.2.4-memmove-to-1.2.5/requests.bin",
+    "sha256": "ef1dcde2d69ab619bbb358a4486e06005cd7772e5d9bd06836c68b83b2f947a5"
+  },
+  "source_prerequisites": "reports/resolution_final_20261102_v1/source_contracts.json",
+  "old_unknowns_unchanged_new_qualified_routes_only": true
+}

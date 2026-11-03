@@ -1,0 +1,362 @@
+{
+  "created_utc": "2026-11-02T04:14:12.984539+00:00",
+  "all_analysis_checks_passed": true,
+  "source_identities": 12,
+  "projects": 4,
+  "effective_source_statuses": {
+    "SUPPORT": 12
+  },
+  "both_tools_SUPPORT": 12,
+  "initial_frozen_source_statuses": {
+    "UNKNOWN": 6,
+    "SUPPORT": 3
+  },
+  "adjacent_comparisons": 8,
+  "admitted_comparisons": 8,
+  "query_pairs": 24576,
+  "observer_requests": 122880,
+  "policies": {
+    "typed": {
+      "return": {
+        "SUPPORT": 22672,
+        "REFUTE": 1904,
+        "UNKNOWN": 0,
+        "wrong_determinate": 0
+      },
+      "first4": {
+        "SUPPORT": 14332,
+        "REFUTE": 10244,
+        "UNKNOWN": 0,
+        "wrong_determinate": 0
+      },
+      "last4": {
+        "SUPPORT": 14746,
+        "REFUTE": 9830,
+        "UNKNOWN": 0,
+        "wrong_determinate": 0
+      },
+      "buffer8": {
+        "SUPPORT": 10206,
+        "REFUTE": 14370,
+        "UNKNOWN": 0,
+        "wrong_determinate": 0
+      },
+      "full": {
+        "SUPPORT": 10206,
+        "REFUTE": 14370,
+        "UNKNOWN": 0,
+        "wrong_determinate": 0
+      }
+    },
+    "whole_entry": {
+      "return": {
+        "SUPPORT": 5120,
+        "REFUTE": 0,
+        "UNKNOWN": 19456,
+        "wrong_determinate": 0
+      },
+      "first4": {
+        "SUPPORT": 5120,
+        "REFUTE": 0,
+        "UNKNOWN": 19456,
+        "wrong_determinate": 0
+      },
+      "last4": {
+        "SUPPORT": 5120,
+        "REFUTE": 0,
+        "UNKNOWN": 19456,
+        "wrong_determinate": 0
+      },
+      "buffer8": {
+        "SUPPORT": 5120,
+        "REFUTE": 0,
+        "UNKNOWN": 19456,
+        "wrong_determinate": 0
+      },
+      "full": {
+        "SUPPORT": 5120,
+        "REFUTE": 0,
+        "UNKNOWN": 19456,
+        "wrong_determinate": 0
+      }
+    },
+    "return_for_all": {
+      "return": {
+        "SUPPORT": 22672,
+        "REFUTE": 1904,
+        "UNKNOWN": 0,
+        "wrong_determinate": 0
+      },
+      "first4": {
+        "SUPPORT": 22672,
+        "REFUTE": 1904,
+        "UNKNOWN": 0,
+        "wrong_determinate": 8340
+      },
+      "last4": {
+        "SUPPORT": 22672,
+        "REFUTE": 1904,
+        "UNKNOWN": 0,
+        "wrong_determinate": 8810
+      },
+      "buffer8": {
+        "SUPPORT": 22672,
+        "REFUTE": 1904,
+        "UNKNOWN": 0,
+        "wrong_determinate": 12466
+      },
+      "full": {
+        "SUPPORT": 22672,
+        "REFUTE": 1904,
+        "UNKNOWN": 0,
+        "wrong_determinate": 12466
+      }
+    },
+    "drop_frame": {
+      "return": {
+        "SUPPORT": 22672,
+        "REFUTE": 1904,
+        "UNKNOWN": 0,
+        "wrong_determinate": 0
+      },
+      "first4": {
+        "SUPPORT": 19678,
+        "REFUTE": 4898,
+        "UNKNOWN": 0,
+        "wrong_determinate": 5346
+      },
+      "last4": {
+        "SUPPORT": 22528,
+        "REFUTE": 2048,
+        "UNKNOWN": 0,
+        "wrong_determinate": 7782
+      },
+      "buffer8": {
+        "SUPPORT": 17630,
+        "REFUTE": 6946,
+        "UNKNOWN": 0,
+        "wrong_determinate": 7424
+      },
+      "full": {
+        "SUPPORT": 17606,
+        "REFUTE": 6970,
+        "UNKNOWN": 0,
+        "wrong_determinate": 7400
+      }
+    }
+  },
+  "compiled_guard_valid_requests": 122880,
+  "compiled_guard_invalid_requests": 32,
+  "paired_kernel_measurements": [
+    {
+      "id": "lua-5.4.7",
+      "status": "COMPLETE",
+      "calls_per_repetition": 150008,
+      "native_seconds": [
+        0.001248968,
+        0.001189865,
+        0.001189965
+      ],
+      "summary_seconds": [
+        0.001176064,
+        0.001175165,
+        0.001233467
+      ],
+      "median_summary_over_native": 0.9883181438109524,
+      "excludes_contract_construction_and_source_validation": true
+    },
+    {
+      "id": "lua-5.4.8",
+      "status": "COMPLETE",
+      "calls_per_repetition": 150008,
+      "native_seconds": [
+        0.001194865,
+        0.001203365,
+        0.001238568
+      ],
+      "summary_seconds": [
+        0.001262169,
+        0.001249068,
+        0.001245267
+      ],
+      "median_summary_over_native": 1.037979332953842,
+      "excludes_contract_construction_and_source_validation": true
+    },
+    {
+      "id": "lua-5.4.9",
+      "status": "COMPLETE",
+      "calls_per_repetition": 150008,
+      "native_seconds": [
+        0.001188165,
+        0.001337873,
+        0.001239569
+      ],
+      "summary_seconds": [
+        0.00126727,
+        0.00126297,
+        0.001427978
+      ],
+      "median_summary_over_native": 1.0223472836122878,
+      "excludes_contract_construction_and_source_validation": true
+    },
+    {
+      "id": "libgrapheme-2.0.1",
+      "status": "COMPLETE",
+      "calls_per_repetition": 1190328,
+      "native_seconds": [
+        0.009406161,
+        0.009461165,
+        0.01079383
+      ],
+      "summary_seconds": [
+        0.009364359,
+        0.009367359,
+        0.009716977
+      ],
+      "median_summary_over_native": 0.9900851533611347,
+      "excludes_contract_construction_and_source_validation": true
+    },
+    {
+      "id": "libgrapheme-2.0.2",
+      "status": "COMPLETE",
+      "calls_per_repetition": 1190328,
+      "native_seconds": [
+        0.009105374,
+        0.009210678,
+        0.009232079
+      ],
+      "summary_seconds": [
+        0.009156676,
+        0.009318483,
+        0.00922948
+      ],
+      "median_summary_over_native": 1.0020413263822707,
+      "excludes_contract_construction_and_source_validation": true
+    },
+    {
+      "id": "libgrapheme-3.0.0",
+      "status": "COMPLETE",
+      "calls_per_repetition": 1190328,
+      "native_seconds": [
+        0.009347544,
+        0.011077926,
+        0.00927754
+      ],
+      "summary_seconds": [
+        0.009450049,
+        0.009511051,
+        0.009888069
+      ],
+      "median_summary_over_native": 1.0174919743624635,
+      "excludes_contract_construction_and_source_validation": true
+    },
+    {
+      "id": "utf8h-5724390ef02d",
+      "status": "COMPLETE",
+      "calls_per_repetition": 1190328,
+      "native_seconds": [
+        0.012435323,
+        0.012022303,
+        0.013192661
+      ],
+      "summary_seconds": [
+        0.019288167,
+        0.010924847,
+        0.011438573
+      ],
+      "median_summary_over_native": 0.9198452665845511,
+      "excludes_contract_construction_and_source_validation": true
+    },
+    {
+      "id": "utf8h-552163f306c7",
+      "status": "COMPLETE",
+      "calls_per_repetition": 1190328,
+      "native_seconds": [
+        0.01265721,
+        0.012147285,
+        0.01348595
+      ],
+      "summary_seconds": [
+        0.011721564,
+        0.011503954,
+        0.010969329
+      ],
+      "median_summary_over_native": 0.9088854494789926,
+      "excludes_contract_construction_and_source_validation": true
+    },
+    {
+      "id": "utf8h-8a37b279054b",
+      "status": "COMPLETE",
+      "calls_per_repetition": 1190328,
+      "native_seconds": [
+        0.011563376,
+        0.009506455,
+        0.009633463
+      ],
+      "summary_seconds": [
+        0.01162748,
+        0.009492854,
+        0.009665265
+      ],
+      "median_summary_over_native": 1.0033012012398863,
+      "excludes_contract_construction_and_source_validation": true
+    },
+    {
+      "id": "libunistring-1.4.1",
+      "status": "COMPLETE",
+      "calls_per_repetition": 1190328,
+      "native_seconds": [
+        0.009651942,
+        0.009936155,
+        0.009858652
+      ],
+      "summary_seconds": [
+        0.009771947,
+        0.010119063,
+        0.010795694
+      ],
+      "median_summary_over_native": 1.026414463153786,
+      "excludes_contract_construction_and_source_validation": true
+    },
+    {
+      "id": "libunistring-1.4.2",
+      "status": "COMPLETE",
+      "calls_per_repetition": 1190328,
+      "native_seconds": [
+        0.009765147,
+        0.009854251,
+        0.009950856
+      ],
+      "summary_seconds": [
+        0.010153165,
+        0.010154365,
+        0.01026447
+      ],
+      "median_summary_over_native": 1.0304552826998217,
+      "excludes_contract_construction_and_source_validation": true
+    },
+    {
+      "id": "libunistring-1.5",
+      "status": "COMPLETE",
+      "calls_per_repetition": 1190328,
+      "native_seconds": [
+        0.009258017,
+        0.009529428,
+        0.009608832
+      ],
+      "summary_seconds": [
+        0.010371367,
+        0.00935222,
+        0.009471726
+      ],
+      "median_summary_over_native": 0.9939448621680126,
+      "excludes_contract_construction_and_source_validation": true
+    }
+  ],
+  "original_phases_unchanged": true,
+  "new_projects_share_one_UTF8_encoder_family_not_independent_algorithms": true,
+  "no_new_humans": true,
+  "no_general_C_equivalence_or_overall_speedup_claim": true,
+  "analysis_wall_seconds": 165.29232680000132,
+  "analysis_started_utc": "2026-11-02T04:11:27.692664+00:00"
+}

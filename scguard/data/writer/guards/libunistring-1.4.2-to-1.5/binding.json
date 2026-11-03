@@ -1,0 +1,41 @@
+{
+  "premises": [
+    "exact bound source/build/wrapper identity",
+    "returning sequential call with normal static initialization",
+    "valid eight-byte private destination",
+    "declared input/capacity domain",
+    "no external interference"
+  ],
+  "mask_bits": {
+    "0": "normalized return",
+    "1": "destination byte 0",
+    "2": "destination byte 1",
+    "3": "destination byte 2",
+    "4": "destination byte 3",
+    "5": "destination byte 4",
+    "6": "destination byte 5",
+    "7": "destination byte 6",
+    "8": "destination byte 7"
+  },
+  "guard_sha256": "7e3b15c1361f491635b71eb18cc5258b59a04a1941a960d3ce21ce443a84e537",
+  "source_contracts": [
+    {
+      "id": "libunistring-1.4.2",
+      "phase": "runs\\v5-bitguard-GNU-driver-recovery-20261102-v7\\targets\\libunistring-1.4.2",
+      "contract_sha256": "2dd434e364b0721e45a43addb4cf43055672d0a82daa7337b4d843016cb1caf3",
+      "acquisition_sha256": "4d13bc7ab7f13a4ca16ee91a81e7a878978b907bf83010bbf5ffe5cf91513055",
+      "CBMC_receipt_sha256": "a024196f257835291207579dadb03399a7040137160a28d5cb2841899a3d1bda",
+      "ESBMC_receipt_sha256": "514e2ee0aa0ea50525a0b20add75595228c998a417694f9879bdbde64abd18e2"
+    },
+    {
+      "id": "libunistring-1.5",
+      "phase": "runs\\v5-bitguard-GNU-driver-recovery-20261102-v7\\targets\\libunistring-1.5",
+      "contract_sha256": "2dd434e364b0721e45a43addb4cf43055672d0a82daa7337b4d843016cb1caf3",
+      "acquisition_sha256": "436d74a7820fa6129eb2b8fd6bd6f1036de834620a73311413419927d836d2f8",
+      "CBMC_receipt_sha256": "289f7a8dc7fff8dd96dc1045b199984d0062a3f14f37721b3da0d9e976e8dc50",
+      "ESBMC_receipt_sha256": "8d1abf4a2e9165474d8038796bae1a7fd995fb1207fdb610e336eb4a61c4683f"
+    }
+  ],
+  "UNEQUAL_refutes_only_requested_observational_equality": true,
+  "arbitrary_old_property_not_refuted": true
+}

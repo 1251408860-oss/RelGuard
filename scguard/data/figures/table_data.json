@@ -1,0 +1,65 @@
+{
+  "source_qualification_rows": [
+    [
+      "CRC-32",
+      "0/0/3",
+      "3/0/0",
+      "3/0/0",
+      "Original step / stream checks; DFCC frame; coefficient composition"
+    ],
+    [
+      "Adler-32",
+      "0/0/3",
+      "0/3/0",
+      "3/0/0",
+      "Original range checks; arithmetic rule; checked prefix emission"
+    ],
+    [
+      "Memory move",
+      "0/0/3",
+      "0/0/3",
+      "3/0/0",
+      "Original C with complete CBMC / ESBMC joint-solving results"
+    ],
+    [
+      "Compare sign",
+      "0/0/3",
+      "0/0/3",
+      "3/0/0",
+      "Original CBMC; typed conditional rule; normalized ESBMC check"
+    ]
+  ],
+  "writer_policy_rows": [
+    [
+      "Typed guard",
+      "72,162",
+      "50,718",
+      "0",
+      "0"
+    ],
+    [
+      "Whole entry",
+      "25,600",
+      "0",
+      "97,280",
+      "0"
+    ],
+    [
+      "Return for all",
+      "113,360",
+      "9,520",
+      "0",
+      "42,082"
+    ],
+    [
+      "Drop entry state",
+      "100,114",
+      "22,766",
+      "0",
+      "27,952"
+    ]
+  ],
+  "writer_valid_requests": 122880,
+  "wrong_is_subset_of_support_or_refute": true,
+  "separate_from_cross_family_catalogue": true
+}

@@ -1,0 +1,2050 @@
+[
+  {
+    "project": "lua",
+    "left": "lua-5.4.7",
+    "right": "lua-5.4.8",
+    "admitted": true,
+    "query_pairs": 3072,
+    "policies": {
+      "typed": {
+        "return": {
+          "SUPPORT": 2988,
+          "REFUTE": 84,
+          "UNKNOWN": 0,
+          "wrong_determinate": 0
+        },
+        "first4": {
+          "SUPPORT": 1792,
+          "REFUTE": 1280,
+          "UNKNOWN": 0,
+          "wrong_determinate": 0
+        },
+        "last4": {
+          "SUPPORT": 1997,
+          "REFUTE": 1075,
+          "UNKNOWN": 0,
+          "wrong_determinate": 0
+        },
+        "buffer8": {
+          "SUPPORT": 1274,
+          "REFUTE": 1798,
+          "UNKNOWN": 0,
+          "wrong_determinate": 0
+        },
+        "full": {
+          "SUPPORT": 1274,
+          "REFUTE": 1798,
+          "UNKNOWN": 0,
+          "wrong_determinate": 0
+        }
+      },
+      "whole_entry": {
+        "return": {
+          "SUPPORT": 1024,
+          "REFUTE": 0,
+          "UNKNOWN": 2048,
+          "wrong_determinate": 0
+        },
+        "first4": {
+          "SUPPORT": 1024,
+          "REFUTE": 0,
+          "UNKNOWN": 2048,
+          "wrong_determinate": 0
+        },
+        "last4": {
+          "SUPPORT": 1024,
+          "REFUTE": 0,
+          "UNKNOWN": 2048,
+          "wrong_determinate": 0
+        },
+        "buffer8": {
+          "SUPPORT": 1024,
+          "REFUTE": 0,
+          "UNKNOWN": 2048,
+          "wrong_determinate": 0
+        },
+        "full": {
+          "SUPPORT": 1024,
+          "REFUTE": 0,
+          "UNKNOWN": 2048,
+          "wrong_determinate": 0
+        }
+      },
+      "return_for_all": {
+        "return": {
+          "SUPPORT": 2988,
+          "REFUTE": 84,
+          "UNKNOWN": 0,
+          "wrong_determinate": 0
+        },
+        "first4": {
+          "SUPPORT": 2988,
+          "REFUTE": 84,
+          "UNKNOWN": 0,
+          "wrong_determinate": 1196
+        },
+        "last4": {
+          "SUPPORT": 2988,
+          "REFUTE": 84,
+          "UNKNOWN": 0,
+          "wrong_determinate": 991
+        },
+        "buffer8": {
+          "SUPPORT": 2988,
+          "REFUTE": 84,
+          "UNKNOWN": 0,
+          "wrong_determinate": 1714
+        },
+        "full": {
+          "SUPPORT": 2988,
+          "REFUTE": 84,
+          "UNKNOWN": 0,
+          "wrong_determinate": 1714
+        }
+      },
+      "drop_frame": {
+        "return": {
+          "SUPPORT": 2988,
+          "REFUTE": 84,
+          "UNKNOWN": 0,
+          "wrong_determinate": 0
+        },
+        "first4": {
+          "SUPPORT": 3072,
+          "REFUTE": 0,
+          "UNKNOWN": 0,
+          "wrong_determinate": 1280
+        },
+        "last4": {
+          "SUPPORT": 2048,
+          "REFUTE": 1024,
+          "UNKNOWN": 0,
+          "wrong_determinate": 51
+        },
+        "buffer8": {
+          "SUPPORT": 2048,
+          "REFUTE": 1024,
+          "UNKNOWN": 0,
+          "wrong_determinate": 774
+        },
+        "full": {
+          "SUPPORT": 2048,
+          "REFUTE": 1024,
+          "UNKNOWN": 0,
+          "wrong_determinate": 774
+        }
+      }
+    },
+    "first_errors": {
+      "return_for_all": {
+        "left": {
+          "x": 0,
+          "cap": 8,
+          "entry": [
+            224,
+            1,
+            32,
+            149,
+            125,
+            226,
+            209,
+            94
+          ]
+        },
+        "right": {
+          "x": 0,
+          "cap": 8,
+          "entry": [
+            31,
+            254,
+            223,
+            106,
+            130,
+            29,
+            46,
+            161
+          ]
+        },
+        "observer": "first4",
+        "gold": "REFUTE",
+        "answer": "SUPPORT",
+        "actual_left": [
+          1,
+          224,
+          1,
+          32,
+          149,
+          125,
+          226,
+          209,
+          0
+        ],
+        "actual_right": [
+          1,
+          31,
+          254,
+          223,
+          106,
+          130,
+          29,
+          46,
+          0
+        ]
+      },
+      "drop_frame": {
+        "left": {
+          "x": 0,
+          "cap": 8,
+          "entry": [
+            224,
+            1,
+            32,
+            149,
+            125,
+            226,
+            209,
+            94
+          ]
+        },
+        "right": {
+          "x": 0,
+          "cap": 8,
+          "entry": [
+            31,
+            254,
+            223,
+            106,
+            130,
+            29,
+            46,
+            161
+          ]
+        },
+        "observer": "first4",
+        "gold": "REFUTE",
+        "answer": "SUPPORT",
+        "actual_left": [
+          1,
+          224,
+          1,
+          32,
+          149,
+          125,
+          226,
+          209,
+          0
+        ],
+        "actual_right": [
+          1,
+          31,
+          254,
+          223,
+          106,
+          130,
+          29,
+          46,
+          0
+        ]
+      }
+    },
+    "identical_state_version_differences": 0,
+    "compiled_guard": {
+      "directory": "reports\\bitguard_final_20261102_v1\\guards\\lua-5.4.7-to-5.4.8",
+      "valid_requests": 15360,
+      "invalid_requests": 4,
+      "all_match": true
+    }
+  },
+  {
+    "project": "lua",
+    "left": "lua-5.4.8",
+    "right": "lua-5.4.9",
+    "admitted": true,
+    "query_pairs": 3072,
+    "policies": {
+      "typed": {
+        "return": {
+          "SUPPORT": 2988,
+          "REFUTE": 84,
+          "UNKNOWN": 0,
+          "wrong_determinate": 0
+        },
+        "first4": {
+          "SUPPORT": 1792,
+          "REFUTE": 1280,
+          "UNKNOWN": 0,
+          "wrong_determinate": 0
+        },
+        "last4": {
+          "SUPPORT": 1997,
+          "REFUTE": 1075,
+          "UNKNOWN": 0,
+          "wrong_determinate": 0
+        },
+        "buffer8": {
+          "SUPPORT": 1274,
+          "REFUTE": 1798,
+          "UNKNOWN": 0,
+          "wrong_determinate": 0
+        },
+        "full": {
+          "SUPPORT": 1274,
+          "REFUTE": 1798,
+          "UNKNOWN": 0,
+          "wrong_determinate": 0
+        }
+      },
+      "whole_entry": {
+        "return": {
+          "SUPPORT": 1024,
+          "REFUTE": 0,
+          "UNKNOWN": 2048,
+          "wrong_determinate": 0
+        },
+        "first4": {
+          "SUPPORT": 1024,
+          "REFUTE": 0,
+          "UNKNOWN": 2048,
+          "wrong_determinate": 0
+        },
+        "last4": {
+          "SUPPORT": 1024,
+          "REFUTE": 0,
+          "UNKNOWN": 2048,
+          "wrong_determinate": 0
+        },
+        "buffer8": {
+          "SUPPORT": 1024,
+          "REFUTE": 0,
+          "UNKNOWN": 2048,
+          "wrong_determinate": 0
+        },
+        "full": {
+          "SUPPORT": 1024,
+          "REFUTE": 0,
+          "UNKNOWN": 2048,
+          "wrong_determinate": 0
+        }
+      },
+      "return_for_all": {
+        "return": {
+          "SUPPORT": 2988,
+          "REFUTE": 84,
+          "UNKNOWN": 0,
+          "wrong_determinate": 0
+        },
+        "first4": {
+          "SUPPORT": 2988,
+          "REFUTE": 84,
+          "UNKNOWN": 0,
+          "wrong_determinate": 1196
+        },
+        "last4": {
+          "SUPPORT": 2988,
+          "REFUTE": 84,
+          "UNKNOWN": 0,
+          "wrong_determinate": 991
+        },
+        "buffer8": {
+          "SUPPORT": 2988,
+          "REFUTE": 84,
+          "UNKNOWN": 0,
+          "wrong_determinate": 1714
+        },
+        "full": {
+          "SUPPORT": 2988,
+          "REFUTE": 84,
+          "UNKNOWN": 0,
+          "wrong_determinate": 1714
+        }
+      },
+      "drop_frame": {
+        "return": {
+          "SUPPORT": 2988,
+          "REFUTE": 84,
+          "UNKNOWN": 0,
+          "wrong_determinate": 0
+        },
+        "first4": {
+          "SUPPORT": 3072,
+          "REFUTE": 0,
+          "UNKNOWN": 0,
+          "wrong_determinate": 1280
+        },
+        "last4": {
+          "SUPPORT": 2048,
+          "REFUTE": 1024,
+          "UNKNOWN": 0,
+          "wrong_determinate": 51
+        },
+        "buffer8": {
+          "SUPPORT": 2048,
+          "REFUTE": 1024,
+          "UNKNOWN": 0,
+          "wrong_determinate": 774
+        },
+        "full": {
+          "SUPPORT": 2048,
+          "REFUTE": 1024,
+          "UNKNOWN": 0,
+          "wrong_determinate": 774
+        }
+      }
+    },
+    "first_errors": {
+      "return_for_all": {
+        "left": {
+          "x": 0,
+          "cap": 8,
+          "entry": [
+            224,
+            1,
+            32,
+            149,
+            125,
+            226,
+            209,
+            94
+          ]
+        },
+        "right": {
+          "x": 0,
+          "cap": 8,
+          "entry": [
+            31,
+            254,
+            223,
+            106,
+            130,
+            29,
+            46,
+            161
+          ]
+        },
+        "observer": "first4",
+        "gold": "REFUTE",
+        "answer": "SUPPORT",
+        "actual_left": [
+          1,
+          224,
+          1,
+          32,
+          149,
+          125,
+          226,
+          209,
+          0
+        ],
+        "actual_right": [
+          1,
+          31,
+          254,
+          223,
+          106,
+          130,
+          29,
+          46,
+          0
+        ]
+      },
+      "drop_frame": {
+        "left": {
+          "x": 0,
+          "cap": 8,
+          "entry": [
+            224,
+            1,
+            32,
+            149,
+            125,
+            226,
+            209,
+            94
+          ]
+        },
+        "right": {
+          "x": 0,
+          "cap": 8,
+          "entry": [
+            31,
+            254,
+            223,
+            106,
+            130,
+            29,
+            46,
+            161
+          ]
+        },
+        "observer": "first4",
+        "gold": "REFUTE",
+        "answer": "SUPPORT",
+        "actual_left": [
+          1,
+          224,
+          1,
+          32,
+          149,
+          125,
+          226,
+          209,
+          0
+        ],
+        "actual_right": [
+          1,
+          31,
+          254,
+          223,
+          106,
+          130,
+          29,
+          46,
+          0
+        ]
+      }
+    },
+    "identical_state_version_differences": 0,
+    "compiled_guard": {
+      "directory": "reports\\bitguard_final_20261102_v1\\guards\\lua-5.4.8-to-5.4.9",
+      "valid_requests": 15360,
+      "invalid_requests": 4,
+      "all_match": true
+    }
+  },
+  {
+    "project": "libgrapheme",
+    "left": "libgrapheme-2.0.1",
+    "right": "libgrapheme-2.0.2",
+    "admitted": true,
+    "query_pairs": 3072,
+    "policies": {
+      "typed": {
+        "return": {
+          "SUPPORT": 2999,
+          "REFUTE": 73,
+          "UNKNOWN": 0,
+          "wrong_determinate": 0
+        },
+        "first4": {
+          "SUPPORT": 1792,
+          "REFUTE": 1280,
+          "UNKNOWN": 0,
+          "wrong_determinate": 0
+        },
+        "last4": {
+          "SUPPORT": 1792,
+          "REFUTE": 1280,
+          "UNKNOWN": 0,
+          "wrong_determinate": 0
+        },
+        "buffer8": {
+          "SUPPORT": 1277,
+          "REFUTE": 1795,
+          "UNKNOWN": 0,
+          "wrong_determinate": 0
+        },
+        "full": {
+          "SUPPORT": 1277,
+          "REFUTE": 1795,
+          "UNKNOWN": 0,
+          "wrong_determinate": 0
+        }
+      },
+      "whole_entry": {
+        "return": {
+          "SUPPORT": 512,
+          "REFUTE": 0,
+          "UNKNOWN": 2560,
+          "wrong_determinate": 0
+        },
+        "first4": {
+          "SUPPORT": 512,
+          "REFUTE": 0,
+          "UNKNOWN": 2560,
+          "wrong_determinate": 0
+        },
+        "last4": {
+          "SUPPORT": 512,
+          "REFUTE": 0,
+          "UNKNOWN": 2560,
+          "wrong_determinate": 0
+        },
+        "buffer8": {
+          "SUPPORT": 512,
+          "REFUTE": 0,
+          "UNKNOWN": 2560,
+          "wrong_determinate": 0
+        },
+        "full": {
+          "SUPPORT": 512,
+          "REFUTE": 0,
+          "UNKNOWN": 2560,
+          "wrong_determinate": 0
+        }
+      },
+      "return_for_all": {
+        "return": {
+          "SUPPORT": 2999,
+          "REFUTE": 73,
+          "UNKNOWN": 0,
+          "wrong_determinate": 0
+        },
+        "first4": {
+          "SUPPORT": 2999,
+          "REFUTE": 73,
+          "UNKNOWN": 0,
+          "wrong_determinate": 1207
+        },
+        "last4": {
+          "SUPPORT": 2999,
+          "REFUTE": 73,
+          "UNKNOWN": 0,
+          "wrong_determinate": 1207
+        },
+        "buffer8": {
+          "SUPPORT": 2999,
+          "REFUTE": 73,
+          "UNKNOWN": 0,
+          "wrong_determinate": 1722
+        },
+        "full": {
+          "SUPPORT": 2999,
+          "REFUTE": 73,
+          "UNKNOWN": 0,
+          "wrong_determinate": 1722
+        }
+      },
+      "drop_frame": {
+        "return": {
+          "SUPPORT": 2999,
+          "REFUTE": 73,
+          "UNKNOWN": 0,
+          "wrong_determinate": 0
+        },
+        "first4": {
+          "SUPPORT": 2256,
+          "REFUTE": 816,
+          "UNKNOWN": 0,
+          "wrong_determinate": 464
+        },
+        "last4": {
+          "SUPPORT": 3072,
+          "REFUTE": 0,
+          "UNKNOWN": 0,
+          "wrong_determinate": 1280
+        },
+        "buffer8": {
+          "SUPPORT": 2256,
+          "REFUTE": 816,
+          "UNKNOWN": 0,
+          "wrong_determinate": 979
+        },
+        "full": {
+          "SUPPORT": 2247,
+          "REFUTE": 825,
+          "UNKNOWN": 0,
+          "wrong_determinate": 970
+        }
+      }
+    },
+    "first_errors": {
+      "return_for_all": {
+        "left": {
+          "x": 0,
+          "cap": 0,
+          "entry": [
+            224,
+            1,
+            32,
+            149,
+            125,
+            226,
+            209,
+            94
+          ]
+        },
+        "right": {
+          "x": 0,
+          "cap": 0,
+          "entry": [
+            31,
+            254,
+            223,
+            106,
+            130,
+            29,
+            46,
+            161
+          ]
+        },
+        "observer": "first4",
+        "gold": "REFUTE",
+        "answer": "SUPPORT",
+        "actual_left": [
+          1,
+          224,
+          1,
+          32,
+          149,
+          125,
+          226,
+          209,
+          94
+        ],
+        "actual_right": [
+          1,
+          31,
+          254,
+          223,
+          106,
+          130,
+          29,
+          46,
+          161
+        ]
+      },
+      "drop_frame": {
+        "left": {
+          "x": 0,
+          "cap": 0,
+          "entry": [
+            224,
+            1,
+            32,
+            149,
+            125,
+            226,
+            209,
+            94
+          ]
+        },
+        "right": {
+          "x": 0,
+          "cap": 0,
+          "entry": [
+            31,
+            254,
+            223,
+            106,
+            130,
+            29,
+            46,
+            161
+          ]
+        },
+        "observer": "first4",
+        "gold": "REFUTE",
+        "answer": "SUPPORT",
+        "actual_left": [
+          1,
+          224,
+          1,
+          32,
+          149,
+          125,
+          226,
+          209,
+          94
+        ],
+        "actual_right": [
+          1,
+          31,
+          254,
+          223,
+          106,
+          130,
+          29,
+          46,
+          161
+        ]
+      }
+    },
+    "identical_state_version_differences": 0,
+    "compiled_guard": {
+      "directory": "reports\\bitguard_final_20261102_v1\\guards\\libgrapheme-2.0.1-to-2.0.2",
+      "valid_requests": 15360,
+      "invalid_requests": 4,
+      "all_match": true
+    }
+  },
+  {
+    "project": "libgrapheme",
+    "left": "libgrapheme-2.0.2",
+    "right": "libgrapheme-3.0.0",
+    "admitted": true,
+    "query_pairs": 3072,
+    "policies": {
+      "typed": {
+        "return": {
+          "SUPPORT": 2999,
+          "REFUTE": 73,
+          "UNKNOWN": 0,
+          "wrong_determinate": 0
+        },
+        "first4": {
+          "SUPPORT": 1792,
+          "REFUTE": 1280,
+          "UNKNOWN": 0,
+          "wrong_determinate": 0
+        },
+        "last4": {
+          "SUPPORT": 1792,
+          "REFUTE": 1280,
+          "UNKNOWN": 0,
+          "wrong_determinate": 0
+        },
+        "buffer8": {
+          "SUPPORT": 1277,
+          "REFUTE": 1795,
+          "UNKNOWN": 0,
+          "wrong_determinate": 0
+        },
+        "full": {
+          "SUPPORT": 1277,
+          "REFUTE": 1795,
+          "UNKNOWN": 0,
+          "wrong_determinate": 0
+        }
+      },
+      "whole_entry": {
+        "return": {
+          "SUPPORT": 512,
+          "REFUTE": 0,
+          "UNKNOWN": 2560,
+          "wrong_determinate": 0
+        },
+        "first4": {
+          "SUPPORT": 512,
+          "REFUTE": 0,
+          "UNKNOWN": 2560,
+          "wrong_determinate": 0
+        },
+        "last4": {
+          "SUPPORT": 512,
+          "REFUTE": 0,
+          "UNKNOWN": 2560,
+          "wrong_determinate": 0
+        },
+        "buffer8": {
+          "SUPPORT": 512,
+          "REFUTE": 0,
+          "UNKNOWN": 2560,
+          "wrong_determinate": 0
+        },
+        "full": {
+          "SUPPORT": 512,
+          "REFUTE": 0,
+          "UNKNOWN": 2560,
+          "wrong_determinate": 0
+        }
+      },
+      "return_for_all": {
+        "return": {
+          "SUPPORT": 2999,
+          "REFUTE": 73,
+          "UNKNOWN": 0,
+          "wrong_determinate": 0
+        },
+        "first4": {
+          "SUPPORT": 2999,
+          "REFUTE": 73,
+          "UNKNOWN": 0,
+          "wrong_determinate": 1207
+        },
+        "last4": {
+          "SUPPORT": 2999,
+          "REFUTE": 73,
+          "UNKNOWN": 0,
+          "wrong_determinate": 1207
+        },
+        "buffer8": {
+          "SUPPORT": 2999,
+          "REFUTE": 73,
+          "UNKNOWN": 0,
+          "wrong_determinate": 1722
+        },
+        "full": {
+          "SUPPORT": 2999,
+          "REFUTE": 73,
+          "UNKNOWN": 0,
+          "wrong_determinate": 1722
+        }
+      },
+      "drop_frame": {
+        "return": {
+          "SUPPORT": 2999,
+          "REFUTE": 73,
+          "UNKNOWN": 0,
+          "wrong_determinate": 0
+        },
+        "first4": {
+          "SUPPORT": 2256,
+          "REFUTE": 816,
+          "UNKNOWN": 0,
+          "wrong_determinate": 464
+        },
+        "last4": {
+          "SUPPORT": 3072,
+          "REFUTE": 0,
+          "UNKNOWN": 0,
+          "wrong_determinate": 1280
+        },
+        "buffer8": {
+          "SUPPORT": 2256,
+          "REFUTE": 816,
+          "UNKNOWN": 0,
+          "wrong_determinate": 979
+        },
+        "full": {
+          "SUPPORT": 2247,
+          "REFUTE": 825,
+          "UNKNOWN": 0,
+          "wrong_determinate": 970
+        }
+      }
+    },
+    "first_errors": {
+      "return_for_all": {
+        "left": {
+          "x": 0,
+          "cap": 0,
+          "entry": [
+            224,
+            1,
+            32,
+            149,
+            125,
+            226,
+            209,
+            94
+          ]
+        },
+        "right": {
+          "x": 0,
+          "cap": 0,
+          "entry": [
+            31,
+            254,
+            223,
+            106,
+            130,
+            29,
+            46,
+            161
+          ]
+        },
+        "observer": "first4",
+        "gold": "REFUTE",
+        "answer": "SUPPORT",
+        "actual_left": [
+          1,
+          224,
+          1,
+          32,
+          149,
+          125,
+          226,
+          209,
+          94
+        ],
+        "actual_right": [
+          1,
+          31,
+          254,
+          223,
+          106,
+          130,
+          29,
+          46,
+          161
+        ]
+      },
+      "drop_frame": {
+        "left": {
+          "x": 0,
+          "cap": 0,
+          "entry": [
+            224,
+            1,
+            32,
+            149,
+            125,
+            226,
+            209,
+            94
+          ]
+        },
+        "right": {
+          "x": 0,
+          "cap": 0,
+          "entry": [
+            31,
+            254,
+            223,
+            106,
+            130,
+            29,
+            46,
+            161
+          ]
+        },
+        "observer": "first4",
+        "gold": "REFUTE",
+        "answer": "SUPPORT",
+        "actual_left": [
+          1,
+          224,
+          1,
+          32,
+          149,
+          125,
+          226,
+          209,
+          94
+        ],
+        "actual_right": [
+          1,
+          31,
+          254,
+          223,
+          106,
+          130,
+          29,
+          46,
+          161
+        ]
+      }
+    },
+    "identical_state_version_differences": 0,
+    "compiled_guard": {
+      "directory": "reports\\bitguard_final_20261102_v1\\guards\\libgrapheme-2.0.2-to-3.0.0",
+      "valid_requests": 15360,
+      "invalid_requests": 4,
+      "all_match": true
+    }
+  },
+  {
+    "project": "utf8h",
+    "left": "utf8h-5724390ef02d",
+    "right": "utf8h-552163f306c7",
+    "admitted": true,
+    "query_pairs": 3072,
+    "policies": {
+      "typed": {
+        "return": {
+          "SUPPORT": 2674,
+          "REFUTE": 398,
+          "UNKNOWN": 0,
+          "wrong_determinate": 0
+        },
+        "first4": {
+          "SUPPORT": 1789,
+          "REFUTE": 1283,
+          "UNKNOWN": 0,
+          "wrong_determinate": 0
+        },
+        "last4": {
+          "SUPPORT": 1792,
+          "REFUTE": 1280,
+          "UNKNOWN": 0,
+          "wrong_determinate": 0
+        },
+        "buffer8": {
+          "SUPPORT": 1274,
+          "REFUTE": 1798,
+          "UNKNOWN": 0,
+          "wrong_determinate": 0
+        },
+        "full": {
+          "SUPPORT": 1274,
+          "REFUTE": 1798,
+          "UNKNOWN": 0,
+          "wrong_determinate": 0
+        }
+      },
+      "whole_entry": {
+        "return": {
+          "SUPPORT": 512,
+          "REFUTE": 0,
+          "UNKNOWN": 2560,
+          "wrong_determinate": 0
+        },
+        "first4": {
+          "SUPPORT": 512,
+          "REFUTE": 0,
+          "UNKNOWN": 2560,
+          "wrong_determinate": 0
+        },
+        "last4": {
+          "SUPPORT": 512,
+          "REFUTE": 0,
+          "UNKNOWN": 2560,
+          "wrong_determinate": 0
+        },
+        "buffer8": {
+          "SUPPORT": 512,
+          "REFUTE": 0,
+          "UNKNOWN": 2560,
+          "wrong_determinate": 0
+        },
+        "full": {
+          "SUPPORT": 512,
+          "REFUTE": 0,
+          "UNKNOWN": 2560,
+          "wrong_determinate": 0
+        }
+      },
+      "return_for_all": {
+        "return": {
+          "SUPPORT": 2674,
+          "REFUTE": 398,
+          "UNKNOWN": 0,
+          "wrong_determinate": 0
+        },
+        "first4": {
+          "SUPPORT": 2674,
+          "REFUTE": 398,
+          "UNKNOWN": 0,
+          "wrong_determinate": 885
+        },
+        "last4": {
+          "SUPPORT": 2674,
+          "REFUTE": 398,
+          "UNKNOWN": 0,
+          "wrong_determinate": 1104
+        },
+        "buffer8": {
+          "SUPPORT": 2674,
+          "REFUTE": 398,
+          "UNKNOWN": 0,
+          "wrong_determinate": 1400
+        },
+        "full": {
+          "SUPPORT": 2674,
+          "REFUTE": 398,
+          "UNKNOWN": 0,
+          "wrong_determinate": 1400
+        }
+      },
+      "drop_frame": {
+        "return": {
+          "SUPPORT": 2674,
+          "REFUTE": 398,
+          "UNKNOWN": 0,
+          "wrong_determinate": 0
+        },
+        "first4": {
+          "SUPPORT": 2253,
+          "REFUTE": 819,
+          "UNKNOWN": 0,
+          "wrong_determinate": 464
+        },
+        "last4": {
+          "SUPPORT": 3072,
+          "REFUTE": 0,
+          "UNKNOWN": 0,
+          "wrong_determinate": 1280
+        },
+        "buffer8": {
+          "SUPPORT": 2253,
+          "REFUTE": 819,
+          "UNKNOWN": 0,
+          "wrong_determinate": 979
+        },
+        "full": {
+          "SUPPORT": 2252,
+          "REFUTE": 820,
+          "UNKNOWN": 0,
+          "wrong_determinate": 978
+        }
+      }
+    },
+    "first_errors": {
+      "return_for_all": {
+        "left": {
+          "x": 0,
+          "cap": 0,
+          "entry": [
+            224,
+            1,
+            32,
+            149,
+            125,
+            226,
+            209,
+            94
+          ]
+        },
+        "right": {
+          "x": 0,
+          "cap": 0,
+          "entry": [
+            31,
+            254,
+            223,
+            106,
+            130,
+            29,
+            46,
+            161
+          ]
+        },
+        "observer": "first4",
+        "gold": "REFUTE",
+        "answer": "SUPPORT",
+        "actual_left": [
+          -1,
+          224,
+          1,
+          32,
+          149,
+          125,
+          226,
+          209,
+          94
+        ],
+        "actual_right": [
+          -1,
+          31,
+          254,
+          223,
+          106,
+          130,
+          29,
+          46,
+          161
+        ]
+      },
+      "drop_frame": {
+        "left": {
+          "x": 0,
+          "cap": 0,
+          "entry": [
+            224,
+            1,
+            32,
+            149,
+            125,
+            226,
+            209,
+            94
+          ]
+        },
+        "right": {
+          "x": 0,
+          "cap": 0,
+          "entry": [
+            31,
+            254,
+            223,
+            106,
+            130,
+            29,
+            46,
+            161
+          ]
+        },
+        "observer": "first4",
+        "gold": "REFUTE",
+        "answer": "SUPPORT",
+        "actual_left": [
+          -1,
+          224,
+          1,
+          32,
+          149,
+          125,
+          226,
+          209,
+          94
+        ],
+        "actual_right": [
+          -1,
+          31,
+          254,
+          223,
+          106,
+          130,
+          29,
+          46,
+          161
+        ]
+      }
+    },
+    "identical_state_version_differences": 0,
+    "compiled_guard": {
+      "directory": "reports\\bitguard_final_20261102_v1\\guards\\utf8h-5724390ef02d-to-552163f306c7",
+      "valid_requests": 15360,
+      "invalid_requests": 4,
+      "all_match": true
+    }
+  },
+  {
+    "project": "utf8h",
+    "left": "utf8h-552163f306c7",
+    "right": "utf8h-8a37b279054b",
+    "admitted": true,
+    "query_pairs": 3072,
+    "policies": {
+      "typed": {
+        "return": {
+          "SUPPORT": 2674,
+          "REFUTE": 398,
+          "UNKNOWN": 0,
+          "wrong_determinate": 0
+        },
+        "first4": {
+          "SUPPORT": 1789,
+          "REFUTE": 1283,
+          "UNKNOWN": 0,
+          "wrong_determinate": 0
+        },
+        "last4": {
+          "SUPPORT": 1792,
+          "REFUTE": 1280,
+          "UNKNOWN": 0,
+          "wrong_determinate": 0
+        },
+        "buffer8": {
+          "SUPPORT": 1274,
+          "REFUTE": 1798,
+          "UNKNOWN": 0,
+          "wrong_determinate": 0
+        },
+        "full": {
+          "SUPPORT": 1274,
+          "REFUTE": 1798,
+          "UNKNOWN": 0,
+          "wrong_determinate": 0
+        }
+      },
+      "whole_entry": {
+        "return": {
+          "SUPPORT": 512,
+          "REFUTE": 0,
+          "UNKNOWN": 2560,
+          "wrong_determinate": 0
+        },
+        "first4": {
+          "SUPPORT": 512,
+          "REFUTE": 0,
+          "UNKNOWN": 2560,
+          "wrong_determinate": 0
+        },
+        "last4": {
+          "SUPPORT": 512,
+          "REFUTE": 0,
+          "UNKNOWN": 2560,
+          "wrong_determinate": 0
+        },
+        "buffer8": {
+          "SUPPORT": 512,
+          "REFUTE": 0,
+          "UNKNOWN": 2560,
+          "wrong_determinate": 0
+        },
+        "full": {
+          "SUPPORT": 512,
+          "REFUTE": 0,
+          "UNKNOWN": 2560,
+          "wrong_determinate": 0
+        }
+      },
+      "return_for_all": {
+        "return": {
+          "SUPPORT": 2674,
+          "REFUTE": 398,
+          "UNKNOWN": 0,
+          "wrong_determinate": 0
+        },
+        "first4": {
+          "SUPPORT": 2674,
+          "REFUTE": 398,
+          "UNKNOWN": 0,
+          "wrong_determinate": 885
+        },
+        "last4": {
+          "SUPPORT": 2674,
+          "REFUTE": 398,
+          "UNKNOWN": 0,
+          "wrong_determinate": 1104
+        },
+        "buffer8": {
+          "SUPPORT": 2674,
+          "REFUTE": 398,
+          "UNKNOWN": 0,
+          "wrong_determinate": 1400
+        },
+        "full": {
+          "SUPPORT": 2674,
+          "REFUTE": 398,
+          "UNKNOWN": 0,
+          "wrong_determinate": 1400
+        }
+      },
+      "drop_frame": {
+        "return": {
+          "SUPPORT": 2674,
+          "REFUTE": 398,
+          "UNKNOWN": 0,
+          "wrong_determinate": 0
+        },
+        "first4": {
+          "SUPPORT": 2253,
+          "REFUTE": 819,
+          "UNKNOWN": 0,
+          "wrong_determinate": 464
+        },
+        "last4": {
+          "SUPPORT": 3072,
+          "REFUTE": 0,
+          "UNKNOWN": 0,
+          "wrong_determinate": 1280
+        },
+        "buffer8": {
+          "SUPPORT": 2253,
+          "REFUTE": 819,
+          "UNKNOWN": 0,
+          "wrong_determinate": 979
+        },
+        "full": {
+          "SUPPORT": 2252,
+          "REFUTE": 820,
+          "UNKNOWN": 0,
+          "wrong_determinate": 978
+        }
+      }
+    },
+    "first_errors": {
+      "return_for_all": {
+        "left": {
+          "x": 0,
+          "cap": 0,
+          "entry": [
+            224,
+            1,
+            32,
+            149,
+            125,
+            226,
+            209,
+            94
+          ]
+        },
+        "right": {
+          "x": 0,
+          "cap": 0,
+          "entry": [
+            31,
+            254,
+            223,
+            106,
+            130,
+            29,
+            46,
+            161
+          ]
+        },
+        "observer": "first4",
+        "gold": "REFUTE",
+        "answer": "SUPPORT",
+        "actual_left": [
+          -1,
+          224,
+          1,
+          32,
+          149,
+          125,
+          226,
+          209,
+          94
+        ],
+        "actual_right": [
+          -1,
+          31,
+          254,
+          223,
+          106,
+          130,
+          29,
+          46,
+          161
+        ]
+      },
+      "drop_frame": {
+        "left": {
+          "x": 0,
+          "cap": 0,
+          "entry": [
+            224,
+            1,
+            32,
+            149,
+            125,
+            226,
+            209,
+            94
+          ]
+        },
+        "right": {
+          "x": 0,
+          "cap": 0,
+          "entry": [
+            31,
+            254,
+            223,
+            106,
+            130,
+            29,
+            46,
+            161
+          ]
+        },
+        "observer": "first4",
+        "gold": "REFUTE",
+        "answer": "SUPPORT",
+        "actual_left": [
+          -1,
+          224,
+          1,
+          32,
+          149,
+          125,
+          226,
+          209,
+          94
+        ],
+        "actual_right": [
+          -1,
+          31,
+          254,
+          223,
+          106,
+          130,
+          29,
+          46,
+          161
+        ]
+      }
+    },
+    "identical_state_version_differences": 0,
+    "compiled_guard": {
+      "directory": "reports\\bitguard_final_20261102_v1\\guards\\utf8h-552163f306c7-to-8a37b279054b",
+      "valid_requests": 15360,
+      "invalid_requests": 4,
+      "all_match": true
+    }
+  },
+  {
+    "project": "libunistring",
+    "left": "libunistring-1.4.1",
+    "right": "libunistring-1.4.2",
+    "admitted": true,
+    "query_pairs": 3072,
+    "policies": {
+      "typed": {
+        "return": {
+          "SUPPORT": 2675,
+          "REFUTE": 397,
+          "UNKNOWN": 0,
+          "wrong_determinate": 0
+        },
+        "first4": {
+          "SUPPORT": 1793,
+          "REFUTE": 1279,
+          "UNKNOWN": 0,
+          "wrong_determinate": 0
+        },
+        "last4": {
+          "SUPPORT": 1792,
+          "REFUTE": 1280,
+          "UNKNOWN": 0,
+          "wrong_determinate": 0
+        },
+        "buffer8": {
+          "SUPPORT": 1278,
+          "REFUTE": 1794,
+          "UNKNOWN": 0,
+          "wrong_determinate": 0
+        },
+        "full": {
+          "SUPPORT": 1278,
+          "REFUTE": 1794,
+          "UNKNOWN": 0,
+          "wrong_determinate": 0
+        }
+      },
+      "whole_entry": {
+        "return": {
+          "SUPPORT": 512,
+          "REFUTE": 0,
+          "UNKNOWN": 2560,
+          "wrong_determinate": 0
+        },
+        "first4": {
+          "SUPPORT": 512,
+          "REFUTE": 0,
+          "UNKNOWN": 2560,
+          "wrong_determinate": 0
+        },
+        "last4": {
+          "SUPPORT": 512,
+          "REFUTE": 0,
+          "UNKNOWN": 2560,
+          "wrong_determinate": 0
+        },
+        "buffer8": {
+          "SUPPORT": 512,
+          "REFUTE": 0,
+          "UNKNOWN": 2560,
+          "wrong_determinate": 0
+        },
+        "full": {
+          "SUPPORT": 512,
+          "REFUTE": 0,
+          "UNKNOWN": 2560,
+          "wrong_determinate": 0
+        }
+      },
+      "return_for_all": {
+        "return": {
+          "SUPPORT": 2675,
+          "REFUTE": 397,
+          "UNKNOWN": 0,
+          "wrong_determinate": 0
+        },
+        "first4": {
+          "SUPPORT": 2675,
+          "REFUTE": 397,
+          "UNKNOWN": 0,
+          "wrong_determinate": 882
+        },
+        "last4": {
+          "SUPPORT": 2675,
+          "REFUTE": 397,
+          "UNKNOWN": 0,
+          "wrong_determinate": 1103
+        },
+        "buffer8": {
+          "SUPPORT": 2675,
+          "REFUTE": 397,
+          "UNKNOWN": 0,
+          "wrong_determinate": 1397
+        },
+        "full": {
+          "SUPPORT": 2675,
+          "REFUTE": 397,
+          "UNKNOWN": 0,
+          "wrong_determinate": 1397
+        }
+      },
+      "drop_frame": {
+        "return": {
+          "SUPPORT": 2675,
+          "REFUTE": 397,
+          "UNKNOWN": 0,
+          "wrong_determinate": 0
+        },
+        "first4": {
+          "SUPPORT": 2258,
+          "REFUTE": 814,
+          "UNKNOWN": 0,
+          "wrong_determinate": 465
+        },
+        "last4": {
+          "SUPPORT": 3072,
+          "REFUTE": 0,
+          "UNKNOWN": 0,
+          "wrong_determinate": 1280
+        },
+        "buffer8": {
+          "SUPPORT": 2258,
+          "REFUTE": 814,
+          "UNKNOWN": 0,
+          "wrong_determinate": 980
+        },
+        "full": {
+          "SUPPORT": 2256,
+          "REFUTE": 816,
+          "UNKNOWN": 0,
+          "wrong_determinate": 978
+        }
+      }
+    },
+    "first_errors": {
+      "return_for_all": {
+        "left": {
+          "x": 0,
+          "cap": 0,
+          "entry": [
+            224,
+            1,
+            32,
+            149,
+            125,
+            226,
+            209,
+            94
+          ]
+        },
+        "right": {
+          "x": 0,
+          "cap": 0,
+          "entry": [
+            31,
+            254,
+            223,
+            106,
+            130,
+            29,
+            46,
+            161
+          ]
+        },
+        "observer": "first4",
+        "gold": "REFUTE",
+        "answer": "SUPPORT",
+        "actual_left": [
+          -2,
+          224,
+          1,
+          32,
+          149,
+          125,
+          226,
+          209,
+          94
+        ],
+        "actual_right": [
+          -2,
+          31,
+          254,
+          223,
+          106,
+          130,
+          29,
+          46,
+          161
+        ]
+      },
+      "drop_frame": {
+        "left": {
+          "x": 0,
+          "cap": 0,
+          "entry": [
+            224,
+            1,
+            32,
+            149,
+            125,
+            226,
+            209,
+            94
+          ]
+        },
+        "right": {
+          "x": 0,
+          "cap": 0,
+          "entry": [
+            31,
+            254,
+            223,
+            106,
+            130,
+            29,
+            46,
+            161
+          ]
+        },
+        "observer": "first4",
+        "gold": "REFUTE",
+        "answer": "SUPPORT",
+        "actual_left": [
+          -2,
+          224,
+          1,
+          32,
+          149,
+          125,
+          226,
+          209,
+          94
+        ],
+        "actual_right": [
+          -2,
+          31,
+          254,
+          223,
+          106,
+          130,
+          29,
+          46,
+          161
+        ]
+      }
+    },
+    "identical_state_version_differences": 0,
+    "compiled_guard": {
+      "directory": "reports\\bitguard_final_20261102_v1\\guards\\libunistring-1.4.1-to-1.4.2",
+      "valid_requests": 15360,
+      "invalid_requests": 4,
+      "all_match": true
+    }
+  },
+  {
+    "project": "libunistring",
+    "left": "libunistring-1.4.2",
+    "right": "libunistring-1.5",
+    "admitted": true,
+    "query_pairs": 3072,
+    "policies": {
+      "typed": {
+        "return": {
+          "SUPPORT": 2675,
+          "REFUTE": 397,
+          "UNKNOWN": 0,
+          "wrong_determinate": 0
+        },
+        "first4": {
+          "SUPPORT": 1793,
+          "REFUTE": 1279,
+          "UNKNOWN": 0,
+          "wrong_determinate": 0
+        },
+        "last4": {
+          "SUPPORT": 1792,
+          "REFUTE": 1280,
+          "UNKNOWN": 0,
+          "wrong_determinate": 0
+        },
+        "buffer8": {
+          "SUPPORT": 1278,
+          "REFUTE": 1794,
+          "UNKNOWN": 0,
+          "wrong_determinate": 0
+        },
+        "full": {
+          "SUPPORT": 1278,
+          "REFUTE": 1794,
+          "UNKNOWN": 0,
+          "wrong_determinate": 0
+        }
+      },
+      "whole_entry": {
+        "return": {
+          "SUPPORT": 512,
+          "REFUTE": 0,
+          "UNKNOWN": 2560,
+          "wrong_determinate": 0
+        },
+        "first4": {
+          "SUPPORT": 512,
+          "REFUTE": 0,
+          "UNKNOWN": 2560,
+          "wrong_determinate": 0
+        },
+        "last4": {
+          "SUPPORT": 512,
+          "REFUTE": 0,
+          "UNKNOWN": 2560,
+          "wrong_determinate": 0
+        },
+        "buffer8": {
+          "SUPPORT": 512,
+          "REFUTE": 0,
+          "UNKNOWN": 2560,
+          "wrong_determinate": 0
+        },
+        "full": {
+          "SUPPORT": 512,
+          "REFUTE": 0,
+          "UNKNOWN": 2560,
+          "wrong_determinate": 0
+        }
+      },
+      "return_for_all": {
+        "return": {
+          "SUPPORT": 2675,
+          "REFUTE": 397,
+          "UNKNOWN": 0,
+          "wrong_determinate": 0
+        },
+        "first4": {
+          "SUPPORT": 2675,
+          "REFUTE": 397,
+          "UNKNOWN": 0,
+          "wrong_determinate": 882
+        },
+        "last4": {
+          "SUPPORT": 2675,
+          "REFUTE": 397,
+          "UNKNOWN": 0,
+          "wrong_determinate": 1103
+        },
+        "buffer8": {
+          "SUPPORT": 2675,
+          "REFUTE": 397,
+          "UNKNOWN": 0,
+          "wrong_determinate": 1397
+        },
+        "full": {
+          "SUPPORT": 2675,
+          "REFUTE": 397,
+          "UNKNOWN": 0,
+          "wrong_determinate": 1397
+        }
+      },
+      "drop_frame": {
+        "return": {
+          "SUPPORT": 2675,
+          "REFUTE": 397,
+          "UNKNOWN": 0,
+          "wrong_determinate": 0
+        },
+        "first4": {
+          "SUPPORT": 2258,
+          "REFUTE": 814,
+          "UNKNOWN": 0,
+          "wrong_determinate": 465
+        },
+        "last4": {
+          "SUPPORT": 3072,
+          "REFUTE": 0,
+          "UNKNOWN": 0,
+          "wrong_determinate": 1280
+        },
+        "buffer8": {
+          "SUPPORT": 2258,
+          "REFUTE": 814,
+          "UNKNOWN": 0,
+          "wrong_determinate": 980
+        },
+        "full": {
+          "SUPPORT": 2256,
+          "REFUTE": 816,
+          "UNKNOWN": 0,
+          "wrong_determinate": 978
+        }
+      }
+    },
+    "first_errors": {
+      "return_for_all": {
+        "left": {
+          "x": 0,
+          "cap": 0,
+          "entry": [
+            224,
+            1,
+            32,
+            149,
+            125,
+            226,
+            209,
+            94
+          ]
+        },
+        "right": {
+          "x": 0,
+          "cap": 0,
+          "entry": [
+            31,
+            254,
+            223,
+            106,
+            130,
+            29,
+            46,
+            161
+          ]
+        },
+        "observer": "first4",
+        "gold": "REFUTE",
+        "answer": "SUPPORT",
+        "actual_left": [
+          -2,
+          224,
+          1,
+          32,
+          149,
+          125,
+          226,
+          209,
+          94
+        ],
+        "actual_right": [
+          -2,
+          31,
+          254,
+          223,
+          106,
+          130,
+          29,
+          46,
+          161
+        ]
+      },
+      "drop_frame": {
+        "left": {
+          "x": 0,
+          "cap": 0,
+          "entry": [
+            224,
+            1,
+            32,
+            149,
+            125,
+            226,
+            209,
+            94
+          ]
+        },
+        "right": {
+          "x": 0,
+          "cap": 0,
+          "entry": [
+            31,
+            254,
+            223,
+            106,
+            130,
+            29,
+            46,
+            161
+          ]
+        },
+        "observer": "first4",
+        "gold": "REFUTE",
+        "answer": "SUPPORT",
+        "actual_left": [
+          -2,
+          224,
+          1,
+          32,
+          149,
+          125,
+          226,
+          209,
+          94
+        ],
+        "actual_right": [
+          -2,
+          31,
+          254,
+          223,
+          106,
+          130,
+          29,
+          46,
+          161
+        ]
+      }
+    },
+    "identical_state_version_differences": 0,
+    "compiled_guard": {
+      "directory": "reports\\bitguard_final_20261102_v1\\guards\\libunistring-1.4.2-to-1.5",
+      "valid_requests": 15360,
+      "invalid_requests": 4,
+      "all_match": true
+    }
+  }
+]

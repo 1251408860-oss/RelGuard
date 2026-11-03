@@ -1,0 +1,154 @@
+{
+  "date": "2026-11-03",
+  "unit_tests_passed": 28,
+  "current_candidates_reconstructed": 12,
+  "reference_replay": {
+    "reference_integrity": {
+      "files_checked": 242,
+      "all_hashes_match": true
+    },
+    "writer": {
+      "valid_requests": 122880,
+      "invalid_controls_unknown": 32,
+      "policies": {
+        "typed": {
+          "SUPPORT": 72162,
+          "REFUTE": 50718,
+          "wrong_determinate": 0
+        },
+        "whole_entry": {
+          "SUPPORT": 25600,
+          "UNKNOWN": 97280,
+          "wrong_determinate": 0
+        },
+        "return_for_all": {
+          "SUPPORT": 113360,
+          "REFUTE": 9520,
+          "wrong_determinate": 42082
+        },
+        "drop_frame": {
+          "SUPPORT": 100114,
+          "REFUTE": 22766,
+          "wrong_determinate": 27952
+        }
+      },
+      "identity_coverage_ratio": 4.8,
+      "all_checks_passed": true
+    },
+    "cross_family": {
+      "valid_requests": 49896,
+      "qualified": {
+        "SUPPORT": 13076,
+        "REFUTE": 36820
+      },
+      "intermediate": {
+        "UNKNOWN": 17496,
+        "REFUTE": 21024,
+        "SUPPORT": 11376
+      },
+      "resolved_prior_unknowns": 17496,
+      "invalid_controls_unknown": 32,
+      "independently_replayed_affine_certificates": 2592,
+      "typed_other_systems": 648,
+      "pairs": [
+        {
+          "pair": "miniz-3.1.0-adler32-to-3.1.1",
+          "valid": 7533,
+          "counts": {
+            "SUPPORT": 2213,
+            "REFUTE": 5320
+          }
+        },
+        {
+          "pair": "miniz-3.1.0-crc32-to-3.1.1",
+          "valid": 10125,
+          "counts": {
+            "REFUTE": 6624,
+            "SUPPORT": 3501
+          }
+        },
+        {
+          "pair": "miniz-3.1.1-adler32-to-3.1.2",
+          "valid": 7533,
+          "counts": {
+            "SUPPORT": 2213,
+            "REFUTE": 5320
+          }
+        },
+        {
+          "pair": "miniz-3.1.1-crc32-to-3.1.2",
+          "valid": 10125,
+          "counts": {
+            "REFUTE": 6624,
+            "SUPPORT": 3501
+          }
+        },
+        {
+          "pair": "musl-1.2.4-memcmp_sign-to-1.2.5",
+          "valid": 3645,
+          "counts": {
+            "SUPPORT": 534,
+            "REFUTE": 3111
+          }
+        },
+        {
+          "pair": "musl-1.2.4-memmove-to-1.2.5",
+          "valid": 3645,
+          "counts": {
+            "SUPPORT": 291,
+            "REFUTE": 3354
+          }
+        },
+        {
+          "pair": "musl-1.2.5-memcmp_sign-to-1.2.6",
+          "valid": 3645,
+          "counts": {
+            "SUPPORT": 531,
+            "REFUTE": 3114
+          }
+        },
+        {
+          "pair": "musl-1.2.5-memmove-to-1.2.6",
+          "valid": 3645,
+          "counts": {
+            "SUPPORT": 292,
+            "REFUTE": 3353
+          }
+        }
+      ],
+      "all_checks_passed": true
+    },
+    "source_checker_jobs_executed": 0
+  },
+  "reproduction": {
+    "all_checks_passed": true,
+    "valid_requests_replayed": 172776,
+    "affine_certificates_replayed": 2592,
+    "figure_sets": 4,
+    "table_sets": 2,
+    "source_checker_jobs_executed": 0
+  },
+  "all_19_figure_and_table_outputs_byte_identical": true,
+  "writer_and_cross_family_c_guards_regenerated": true,
+  "standalone_example_and_cli_checks": true,
+  "fresh_zip_extract_verified": true,
+  "wheel_build_data_inference_and_figures": true,
+  "new_c_source_checker_jobs": 0,
+  "github_upload_performed": false,
+  "project_license_added": false,
+  "privacy_and_structure": {
+    "source_files_with_version_suffixes": 0,
+    "historical_runner_directories": 0,
+    "old_project_path_dependencies": 0,
+    "private_path_or_token_patterns": 0
+  },
+  "tested_environment": {
+    "python": "3.12.10",
+    "dependencies": {
+      "z3-solver": "5.3.1.0",
+      "matplotlib": "3.11.2",
+      "numpy": "2.5.3"
+    }
+  },
+  "artifact_phase": "local_validation_before_publication"
+}

@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "source-checked-relational-guards"
+version = "0.1.0"
+description = "Source-checked state models and observation-specific relational guards"
+readme = "README.md"
+license-files = ["third_party/STIX-FONT-LICENSE.txt"]
+requires-python = ">=3.12"
+dependencies = ["z3-solver>=4.13,<6"]
+
+[project.optional-dependencies]
+figures = ["matplotlib>=3.9,<4", "numpy>=1.26,<3"]
+
+[project.scripts]
+scguard = "scguard.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["scguard*"]
+
+[tool.setuptools.package-data]
+scguard = ["data/**/*"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"

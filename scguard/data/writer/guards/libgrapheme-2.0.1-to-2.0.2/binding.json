@@ -1,0 +1,41 @@
+{
+  "premises": [
+    "exact bound source/build/wrapper identity",
+    "returning sequential call with normal static initialization",
+    "valid eight-byte private destination",
+    "declared input/capacity domain",
+    "no external interference"
+  ],
+  "mask_bits": {
+    "0": "normalized return",
+    "1": "destination byte 0",
+    "2": "destination byte 1",
+    "3": "destination byte 2",
+    "4": "destination byte 3",
+    "5": "destination byte 4",
+    "6": "destination byte 5",
+    "7": "destination byte 6",
+    "8": "destination byte 7"
+  },
+  "guard_sha256": "56ad7462d4acd297e094db5091d055b2aaa092b68ec5947c69889b0c1878abb4",
+  "source_contracts": [
+    {
+      "id": "libgrapheme-2.0.1",
+      "phase": "runs\\v5-bitguard-sequential-recovery-20261102-v4\\targets\\libgrapheme-2.0.1",
+      "contract_sha256": "2509fa68bb09b2ddd76520080adbf36f0f8d5f0ea3bc7d213340767fe59f6374",
+      "acquisition_sha256": "a89f5416b2e6e05ae7c6c03313fabbf2be80260c93004b2a6a67c4caf6b35b14",
+      "CBMC_receipt_sha256": "b6f864617464d373b7e2d9182e32860ed7f2533a9750f2f7fccfc8ffe08b0882",
+      "ESBMC_receipt_sha256": "d392143f569ea20bda68043265751ac669b4da0bc28ecb95a825406b0e39a540"
+    },
+    {
+      "id": "libgrapheme-2.0.2",
+      "phase": "runs\\v5-bitguard-sequential-recovery-20261102-v4\\targets\\libgrapheme-2.0.2",
+      "contract_sha256": "2509fa68bb09b2ddd76520080adbf36f0f8d5f0ea3bc7d213340767fe59f6374",
+      "acquisition_sha256": "3e98b79b8aa579abcb8dfb45e98435d9f770a1b200bba7793cc0417d612ec752",
+      "CBMC_receipt_sha256": "6b81fcf18f2afd46b7d17d21b6b9d9345da0238cb125d73d5617e0f05a32f776",
+      "ESBMC_receipt_sha256": "286f7ffa0d7a61ed174c5d5ace5796dcb0477bf87bb3abba5e306b295ad0f48b"
+    }
+  ],
+  "UNEQUAL_refutes_only_requested_observational_equality": true,
+  "arbitrary_old_property_not_refuted": true
+}

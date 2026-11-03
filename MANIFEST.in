@@ -1,0 +1,5 @@
+recursive-include scguard/data *
+recursive-include third_party *
+include NOTICE.md
+include README.zh-CN.md
+

@@ -1,0 +1,31 @@
+{
+  "left": {
+    "project": "musl",
+    "version": "1.2.5",
+    "id": "musl-1.2.5-memcmp_sign",
+    "url": "https://musl.libc.org/releases/musl-1.2.5.tar.gz",
+    "identity": "fixed numbered author distribution; HTTPS bytes, no GPG claim",
+    "api": "memcmp_sign",
+    "source_id": "musl-1.2.5"
+  },
+  "right": {
+    "project": "musl",
+    "version": "1.2.6",
+    "id": "musl-1.2.6-memcmp_sign",
+    "url": "https://musl.libc.org/releases/musl-1.2.6.tar.gz",
+    "identity": "fixed numbered author distribution; HTTPS bytes, no GPG claim",
+    "api": "memcmp_sign",
+    "source_id": "musl-1.2.6"
+  },
+  "left_route": "original_C_CBMC_typed_conditional_lowering_and_normalized_C_ESBMC",
+  "right_route": "original_C_CBMC_typed_conditional_lowering_and_normalized_C_ESBMC",
+  "left_model_sha256": "5c6a3ab71fbfca0d47441da0b5cba07d759f59d4b4202785ef94b9c100f3e411",
+  "right_model_sha256": "5c6a3ab71fbfca0d47441da0b5cba07d759f59d4b4202785ef94b9c100f3e411",
+  "guard_sha256": "f218702fed84d9af2562856f7ee2e0aeb2b3be198d3728fa5ddced8419b7b7b0",
+  "same_request_bytes_as": {
+    "path": "reports/affine_observer_final_20261102_v2/guards/musl-1.2.5-memcmp_sign-to-1.2.6/requests.bin",
+    "sha256": "bfeaa6135525172132a50a3d64f558880b7c2e53c83d4c33c7fd806b5f4bc353"
+  },
+  "source_prerequisites": "reports/resolution_final_20261102_v1/source_contracts.json",
+  "old_unknowns_unchanged_new_qualified_routes_only": true
+}

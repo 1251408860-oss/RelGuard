@@ -1,0 +1,33 @@
+{
+  "left": {
+    "project": "miniz",
+    "version": "3.1.0",
+    "id": "miniz-3.1.0-adler32",
+    "commit": "174573d60290f447c13a2b1b3405de2b96e27d6c",
+    "url": "https://codeload.github.com/richgel999/miniz/tar.gz/174573d60290f447c13a2b1b3405de2b96e27d6c",
+    "identity": "numeric author tag resolved to fixed commit",
+    "api": "adler32",
+    "source_id": "miniz-3.1.0"
+  },
+  "right": {
+    "project": "miniz",
+    "version": "3.1.1",
+    "id": "miniz-3.1.1-adler32",
+    "commit": "d10b03cc73475af673df40f06e5cefd1d5f940d9",
+    "url": "https://codeload.github.com/richgel999/miniz/tar.gz/d10b03cc73475af673df40f06e5cefd1d5f940d9",
+    "identity": "numeric author tag resolved to fixed commit",
+    "api": "adler32",
+    "source_id": "miniz-3.1.1"
+  },
+  "left_route": "original_C_ranges_both_exact_unsigned_normalization_and_normalized_C_both",
+  "right_route": "original_C_ranges_both_exact_unsigned_normalization_and_normalized_C_both",
+  "left_model_sha256": "702b018e7e7094fad74b5bf285ca73bd5a8d090e364482f76917cacacc716f4f",
+  "right_model_sha256": "702b018e7e7094fad74b5bf285ca73bd5a8d090e364482f76917cacacc716f4f",
+  "guard_sha256": "535e834dbcf23bd3750dfb131802672923c954e33b07aa53f46607e993534f0b",
+  "same_request_bytes_as": {
+    "path": "reports/affine_observer_final_20261102_v2/guards/miniz-3.1.0-adler32-to-3.1.1/requests.bin",
+    "sha256": "2674dbdfba9bfdc1070db56e1b5444993c4e15a93c7be009c95211f49bc927e8"
+  },
+  "source_prerequisites": "reports/resolution_final_20261102_v1/source_contracts.json",
+  "old_unknowns_unchanged_new_qualified_routes_only": true
+}

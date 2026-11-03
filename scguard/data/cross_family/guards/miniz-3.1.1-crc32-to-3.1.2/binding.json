@@ -1,0 +1,33 @@
+{
+  "left": {
+    "project": "miniz",
+    "version": "3.1.1",
+    "id": "miniz-3.1.1-crc32",
+    "commit": "d10b03cc73475af673df40f06e5cefd1d5f940d9",
+    "url": "https://codeload.github.com/richgel999/miniz/tar.gz/d10b03cc73475af673df40f06e5cefd1d5f940d9",
+    "identity": "numeric author tag resolved to fixed commit",
+    "api": "crc32",
+    "source_id": "miniz-3.1.1"
+  },
+  "right": {
+    "project": "miniz",
+    "version": "3.1.2",
+    "id": "miniz-3.1.2-crc32",
+    "commit": "77d0dce8627735138c51770d1799a1ef48f2117d",
+    "url": "https://codeload.github.com/richgel999/miniz/tar.gz/77d0dce8627735138c51770d1799a1ef48f2117d",
+    "identity": "numeric author tag resolved to fixed commit",
+    "api": "crc32",
+    "source_id": "miniz-3.1.2"
+  },
+  "left_route": "v15_original_C_streaming_and_enforced_generic_step_frame",
+  "right_route": "v15_original_C_streaming_and_enforced_generic_step_frame",
+  "left_model_sha256": "074c99200dd323eb4568cb90a5fb462b10f6ebddc1499d7c624afbd0e8cb6a63",
+  "right_model_sha256": "074c99200dd323eb4568cb90a5fb462b10f6ebddc1499d7c624afbd0e8cb6a63",
+  "guard_sha256": "6861152974cf509bfa4af04fb0e77d97ea8a2eff041cbbc3531f7b6063d7162c",
+  "same_request_bytes_as": {
+    "path": "reports/affine_observer_final_20261102_v2/guards/miniz-3.1.1-crc32-to-3.1.2/requests.bin",
+    "sha256": "993b59471df7e9aaba1826b608b5fbcc4fcbbd155c99465a64a564be98e50e2e"
+  },
+  "source_prerequisites": "reports/resolution_final_20261102_v1/source_contracts.json",
+  "old_unknowns_unchanged_new_qualified_routes_only": true
+}

@@ -1,0 +1,41 @@
+{
+  "premises": [
+    "exact bound source/build/wrapper identity",
+    "returning sequential call with normal static initialization",
+    "valid eight-byte private destination",
+    "declared input/capacity domain",
+    "no external interference"
+  ],
+  "mask_bits": {
+    "0": "normalized return",
+    "1": "destination byte 0",
+    "2": "destination byte 1",
+    "3": "destination byte 2",
+    "4": "destination byte 3",
+    "5": "destination byte 4",
+    "6": "destination byte 5",
+    "7": "destination byte 6",
+    "8": "destination byte 7"
+  },
+  "guard_sha256": "26421dbbfd62ae97184a63c1222f74216623a0d295e0b21db7d80f4a064f7e85",
+  "source_contracts": [
+    {
+      "id": "lua-5.4.7",
+      "phase": "runs\\v5-bitguard-Lua-build-repair-20261102-v1\\targets\\lua-5.4.7",
+      "contract_sha256": "d064715881cbe6bdb277f36d2e40eced18bb70a10352d4881938d6b2c90f8a47",
+      "acquisition_sha256": "6e79cbe29e182cf0774f740d5d483bcb352aa1ce92f1d42a0a6e2c1e91e266c1",
+      "CBMC_receipt_sha256": "11c2826eca1c21184ef2c83148ac9a4fa5a20e8ec450a6a706b3f600dffd061b",
+      "ESBMC_receipt_sha256": "429405542d53e111c4bfcdb7800d40128d36c7cc40dc3a732b52999ed8d177aa"
+    },
+    {
+      "id": "lua-5.4.8",
+      "phase": "runs\\v5-bitguard-Lua-build-repair-20261102-v1\\targets\\lua-5.4.8",
+      "contract_sha256": "d064715881cbe6bdb277f36d2e40eced18bb70a10352d4881938d6b2c90f8a47",
+      "acquisition_sha256": "6f1d269687c2486bd7307a9faf380c13e48e65e555b35992276bd759a3ad4c5e",
+      "CBMC_receipt_sha256": "d077e69c17dfa7d61bcbac47626800deabd578dde75718c852b76563ca7aad67",
+      "ESBMC_receipt_sha256": "ced15f9331f6b542fbfbe2eeeea1625b5c2ea7de9003a6857f0f96ced401c390"
+    }
+  ],
+  "UNEQUAL_refutes_only_requested_observational_equality": true,
+  "arbitrary_old_property_not_refuted": true
+}

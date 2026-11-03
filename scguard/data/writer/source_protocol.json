@@ -1,0 +1,307 @@
+{
+  "domain": {
+    "x": [
+      0,
+      1114111
+    ],
+    "includes_surrogate_code_units": true,
+    "destination_bytes": 8,
+    "entry_destination_bits": "all 64 bits symbolic",
+    "capacities": {
+      "lua": [
+        8
+      ],
+      "libgrapheme": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "utf8h": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    "state": "one returning sequential call; private statics at C initialization; no arbitrary global state or concurrent effects"
+  },
+  "observation": "normalized int return plus all eight post-state destination bytes; not operational assigns or arbitrary client memory",
+  "C_proof": "whole original translation unit, nine explicit field assertions, all safety and unwinding checks; no source rewrite or hand-supplied codec specification",
+  "CBMC_flags": [
+    "--function",
+    "harness",
+    "--c11",
+    "--64",
+    "--little-endian",
+    "--bounds-check",
+    "--pointer-check",
+    "--pointer-overflow-check",
+    "--signed-overflow-check",
+    "--unwinding-assertions",
+    "--unwind",
+    "33",
+    "--trace",
+    "--json-ui"
+  ],
+  "ESBMC_flags": [
+    "--function",
+    "harness",
+    "--std",
+    "c11",
+    "--64",
+    "--little-endian",
+    "--unwind",
+    "33",
+    "--overflow-check",
+    "--ub-shift-check",
+    "--multi-property",
+    "--keep-verified-claims",
+    "-DBG_ESBMC"
+  ],
+  "includes": [
+    "-I/work/source",
+    "-I/work/source/src",
+    "-I/work/generated"
+  ],
+  "timeouts_seconds": {
+    "acquisition": 60,
+    "native": 120,
+    "solver_each": 180,
+    "benchmark": 180
+  },
+  "targets": [
+    {
+      "project": "lua",
+      "version": "5.4.7",
+      "id": "lua-5.4.7",
+      "url": "https://www.lua.org/ftp/lua-5.4.7.tar.gz",
+      "identity_kind": "author_release",
+      "expected_archive_sha256": "9fbf5e28ef86c69858f6d3d34eccc32e911c1a28b4120ff3e84aaa70cfbf1e30",
+      "unit": "src/lobject.c",
+      "capacities": [
+        8
+      ]
+    },
+    {
+      "project": "lua",
+      "version": "5.4.8",
+      "id": "lua-5.4.8",
+      "url": "https://www.lua.org/ftp/lua-5.4.8.tar.gz",
+      "identity_kind": "author_release",
+      "expected_archive_sha256": "4f18ddae154e793e46eeab727c59ef1c0c0c2b744e7b94219710d76f530629ae",
+      "unit": "src/lobject.c",
+      "capacities": [
+        8
+      ]
+    },
+    {
+      "project": "lua",
+      "version": "5.4.9",
+      "id": "lua-5.4.9",
+      "url": "https://www.lua.org/ftp/lua-5.4.9.tar.gz",
+      "identity_kind": "author_release",
+      "expected_archive_sha256": "2335b6c582a52654f94612bf10d2f4672805d05329aa6568b1d8cd9e5c6fb8e6",
+      "unit": "src/lobject.c",
+      "capacities": [
+        8
+      ]
+    },
+    {
+      "project": "libgrapheme",
+      "version": "2.0.1",
+      "id": "libgrapheme-2.0.1",
+      "url": "https://dl.suckless.org/libgrapheme/libgrapheme-2.0.1.tar.gz",
+      "identity_kind": "author_release",
+      "expected_archive_sha256": "3db593a20fcbedcf4aa01c2ff973c430c40e19b961422ded95efe74a216cda2a",
+      "unit": "src/utf8.c",
+      "capacities": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "role": "source_informed_active_method_development"
+    },
+    {
+      "project": "libgrapheme",
+      "version": "2.0.2",
+      "id": "libgrapheme-2.0.2",
+      "url": "https://dl.suckless.org/libgrapheme/libgrapheme-2.0.2.tar.gz",
+      "identity_kind": "author_release",
+      "expected_archive_sha256": "a68bbddde76bd55ba5d64116ce5e42a13df045c81c0852de9ab60896aa143125",
+      "unit": "src/utf8.c",
+      "capacities": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "role": "source_informed_active_method_development"
+    },
+    {
+      "project": "libgrapheme",
+      "version": "3.0.0",
+      "id": "libgrapheme-3.0.0",
+      "url": "https://dl.suckless.org/libgrapheme/libgrapheme-3.0.0.tar.gz",
+      "identity_kind": "author_release",
+      "expected_archive_sha256": "32585af73dda62fbcc0fed14f199aa1bc988ad01dad0bfbd06cf175d9cf3d68c",
+      "unit": "src/utf8.c",
+      "capacities": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "role": "source_informed_active_method_development"
+    },
+    {
+      "project": "utf8h",
+      "version": "5724390ef02deb061fb00caad08c7ab9972fc65e",
+      "id": "utf8h-5724390ef02d",
+      "url": "https://codeload.github.com/sheredom/utf8.h/tar.gz/5724390ef02deb061fb00caad08c7ab9972fc65e",
+      "identity_kind": "pinned_author_commit_not_numbered_release",
+      "expected_archive_sha256": null,
+      "unit": "utf8.h",
+      "capacities": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "project": "utf8h",
+      "version": "552163f306c7d02bd1ac6b5a25e346d59e1e3d30",
+      "id": "utf8h-552163f306c7",
+      "url": "https://codeload.github.com/sheredom/utf8.h/tar.gz/552163f306c7d02bd1ac6b5a25e346d59e1e3d30",
+      "identity_kind": "pinned_author_commit_not_numbered_release",
+      "expected_archive_sha256": null,
+      "unit": "utf8.h",
+      "capacities": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "project": "utf8h",
+      "version": "8a37b279054b0f573e461a1c478db27cb42265cb",
+      "id": "utf8h-8a37b279054b",
+      "url": "https://codeload.github.com/sheredom/utf8.h/tar.gz/8a37b279054b0f573e461a1c478db27cb42265cb",
+      "identity_kind": "pinned_author_commit_not_numbered_release",
+      "expected_archive_sha256": null,
+      "unit": "utf8.h",
+      "capacities": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "project": "libunistring",
+      "version": "1.4.1",
+      "id": "libunistring-1.4.1",
+      "url": "https://mirrors.kernel.org/gnu/libunistring/libunistring-1.4.1.tar.xz",
+      "unit": "lib/unistr/u8-uctomb.c",
+      "capacities": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "wrapper": "static int bg_actual(unsigned x,unsigned cap,unsigned char *dst){return u8_uctomb((uint8_t*)dst,(ucs4_t)x,(ptrdiff_t)cap);}\n",
+      "role": "new_project_frozen_application_after_active_method_development",
+      "identity_kind": "numbered_GNU_mirror_archive_no_signature_verification_claim"
+    },
+    {
+      "project": "libunistring",
+      "version": "1.4.2",
+      "id": "libunistring-1.4.2",
+      "url": "https://mirrors.kernel.org/gnu/libunistring/libunistring-1.4.2.tar.xz",
+      "unit": "lib/unistr/u8-uctomb.c",
+      "capacities": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "wrapper": "static int bg_actual(unsigned x,unsigned cap,unsigned char *dst){return u8_uctomb((uint8_t*)dst,(ucs4_t)x,(ptrdiff_t)cap);}\n",
+      "role": "new_project_frozen_application_after_active_method_development",
+      "identity_kind": "numbered_GNU_mirror_archive_no_signature_verification_claim"
+    },
+    {
+      "project": "libunistring",
+      "version": "1.5",
+      "id": "libunistring-1.5",
+      "url": "https://mirrors.kernel.org/gnu/libunistring/libunistring-1.5.tar.xz",
+      "unit": "lib/unistr/u8-uctomb.c",
+      "capacities": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "wrapper": "static int bg_actual(unsigned x,unsigned cap,unsigned char *dst){return u8_uctomb((uint8_t*)dst,(ucs4_t)x,(ptrdiff_t)cap);}\n",
+      "role": "new_project_frozen_application_after_active_method_development",
+      "identity_kind": "numbered_GNU_mirror_archive_no_signature_verification_claim"
+    }
+  ]
+}
