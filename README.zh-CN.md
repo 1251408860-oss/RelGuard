@@ -50,11 +50,9 @@ python -m scguard verify-data
 
 ## 快速安装
 
-克隆仓库并安装 Python 依赖：
+下载并解压仓库，在解压后的仓库根目录打开终端，安装 Python 依赖：
 
 ```bash
-git clone https://github.com/1251408860-oss/RelGuard.git
-cd RelGuard
 python -m pip install -r requirements.txt
 ```
 
