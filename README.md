@@ -50,11 +50,9 @@ Record layouts and cohort contents are documented in [docs/data.md](./docs/data.
 
 ## Quick Installation
 
-Clone the repository and install the Python dependencies:
+Download and extract the repository archive. Open a terminal in the extracted repository directory and install the Python dependencies:
 
 ```bash
-git clone https://github.com/1251408860-oss/RelGuard.git
-cd RelGuard
 python -m pip install -r requirements.txt
 ```
 
