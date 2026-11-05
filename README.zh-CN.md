@@ -1,6 +1,6 @@
-# RelGuard: Source-Checked Relational Guards from Automatic State Contracts
+# RelGuard
 
-RelGuard 是论文 **Source-Checked Relational Guards from Automatic State Contracts** 的核心研究实现。系统从原生执行中推断状态合约，验证合约与 C 源程序的联系，再构造可执行的关系守卫，用于按观测字段复用验证证据。
+RelGuard 从原生执行中推断状态合约，验证合约与 C 源程序的联系，再构造可执行的关系守卫，用于按观测字段复用验证证据。
 
 仓库围绕模型构建、独立检查和实验复现组织。下表将论文的各个部分映射到实现及参考数据，便于定位和运行。
 
