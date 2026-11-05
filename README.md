@@ -1,6 +1,6 @@
-# RelGuard: Source-Checked Relational Guards from Automatic State Contracts
+# RelGuard
 
-RelGuard is the core research implementation accompanying **Source-Checked Relational Guards from Automatic State Contracts**. It learns state contracts from native executions, checks their connection to C source, and constructs executable relational guards for observation-specific reuse of verification evidence.
+RelGuard learns state contracts from native executions, checks their connection to C source, and constructs executable relational guards for observation-specific reuse of verification evidence.
 
 The repository is organized around model construction, independent checking, and experimental reproduction. The navigation table maps these parts of the paper to their implementation and reference data.
 
